@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryPurple: #951196;
+  --secondaryPurple: #bc26bd;
+  --lightPurple: #bf60bf;
+  --primaryGreen: #59f218;
+  --secondaryGreen: #3cc900;
+  --primaryYellow: #edd600;
+  --black: #000000;
+  --darkGray: #0d0d0d;
+  --lightBlack: #111111;
+  --white: #ffffff;
+  --purpleBorder: rgba(149, 17, 150, 0.5);
+  --greenShadow: rgba(89, 242, 24, 0.3);
+  --transition: 0.3s ease;
+  --navbarGradient: linear-gradient(
+    90deg,
+    #000000 0%,
+    #120012 40%,
+    #000000 100%
+  );
+  --buttonGradient: linear-gradient(135deg, #951196, #59f218);
+}
+
+body {
+  background-color: rgb(14, 0, 12);
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgb(35, 2, 30);
+}
+
+.navbarCustom {
+  background: var(--navbarGradient);
+  padding: 18px 0;
+  border-bottom: 2px solid var(--primaryGreen);
+  box-shadow:
+    0 0 10px var(--primaryPurple),
+    0 0 20px var(--greenShadow);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  flex-shrink: 0;
+}
+
+.logoNavbar {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: var(--transition);
+}
+
+.logoNavbar:hover {
+  transform: scale(1.03);
+}
+
+.navbarLinks {
+  gap: 25px;
+  margin-left: 40px;
+  align-items: flex-start;
+}
+
+.navbarLinks .nav-link {
+  color: var(--white) !important;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  transition: var(--transition);
+}
+
+.navbarLinks .nav-link:hover,
+.navbarIcons i:hover {
+  color: var(--primaryGreen) !important;
+}
+
+.navbarLinks .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primaryGreen);
+  box-shadow: 0 0 10px var(--primaryGreen);
+}
+
+.dropdownMenuCustom {
+  background-color: var(--lightBlack);
+  border: 1px solid var(--primaryPurple);
+  transition: var(--transition);
+}
+
+.dropdownMenuCustom .dropdown-item {
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.dropdownMenuCustom .dropdown-item:hover {
+  background-color: var(--primaryGreen);
+  color: var(--black);
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+  background-color: var(--darkGray);
+  border: 1px solid var(--purpleBorder);
+  border-radius: 10px;
+  transition: var(--transition);
+}
+
+.searchBox:hover {
+  border-color: var(--primaryGreen);
+  box-shadow: 0 0 10px var(--greenShadow);
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.searchBox input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.searchBox button {
+  width: 50px;
+  height: 42px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--buttonGradient);
+  color: var(--white);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.searchBox button:hover {
+  filter: brightness(1.1);
+}
+
+.navbarIcons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbarIcons i {
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.navbarIcons i:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  border: 1px solid var(--primaryGreen);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.heroSection {
+  position: relative;
+  z-index: 1;
+
+  background:
+    url("../assets/img/bannerPrincipal.png") 65% center / cover no-repeat,
+    radial-gradient(
+      circle at center,
+      rgba(149, 17, 150, 0.35),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #020202 0%, #070007 100%);
+}
+
+.heroContainer {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 560px;
+}
+
+.heroContent {
+  width: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+.heroTag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #d400ff;
+  font-size: 14px;
+  font-weight: 700;
+
+  margin-bottom: 18px;
+}
+
+.heroTag i {
+  font-size: 18px;
+}
+
+.heroContent h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.heroContent h2 {
+  color: #9dff00;
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 1;
+
+  margin-bottom: 20px;
+
+  text-shadow: 0 0 20px rgba(157, 255, 0, 0.4);
+}
+
+.heroContent p {
+  color: #d2d2d2;
+  font-size: 1.15rem;
+  max-width: 560px;
+  margin-bottom: 28px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.btnProducts,
+.btnOffers {
+  padding: 15px 28px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.btnProducts {
+  background: #9dff00;
+  color: black;
+}
+
+.btnProducts:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 0 20px #9dff00;
+}
+
+.btnOffers {
+  border: 2px solid #d400ff;
+  color: #d400ff;
+}
+
+.btnOffers:hover {
+  background: #d400ff;
+  color: white;
+
+  box-shadow: 0 0 20px #d400ff;
+}
+
+.heroFeatures {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.heroFeature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.heroFeatureIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(
+    circle,
+    rgba(212, 0, 255, 0.35),
+    rgba(0, 0, 0, 0.2)
+  );
+
+  color: #9dff00;
+  font-size: 18px;
+
+  box-shadow: 0 0 20px rgba(212, 0, 255, 0.35);
+}
+
+.heroFeature h3 {
+  color: white;
+  font-size: 0.95rem;
+  margin-bottom: 3px;
+}
+
+.heroFeature span {
+  color: #bdbdbd;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 992px) {
+  .dropdownMenuCustom {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+  }
+
+  .dropdown:hover .dropdownMenuCustom {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbarLinks {
+    margin-left: 0;
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .navbarRight {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchBox {
+    max-width: 100%;
+  }
+
+  .navbarIcons {
+    justify-content: center;
+  }
+
+  .dropdownMenuCustom {
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoNavbar {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroContent h1 {
+    font-size: 3.5rem;
+  }
+
+  .heroContent h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .heroContent {
+    width: 100%;
+  }
+
+  .heroTag,
+  .heroButtons,
+  .heroFeatures {
+    justify-content: center;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent h2 {
+    font-size: 3rem;
+  }
+
+  .heroContent p {
+    display: none;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnProducts,
+  .btnOffers {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .heroFeatures {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .heroContent h2 {
+    font-size: 2.2rem;
+  }
+
+  .heroTag {
+    font-size: 11px;
+  }
+
+  .heroFeature {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroFeature h3 {
+    font-size: 0.85rem;
+  }
+
+  .heroFeature span {
+    font-size: 0.75rem;
+  }
+
+  .heroButtons {
+    display: none;
+  }
+}
