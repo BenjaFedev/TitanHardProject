@@ -812,11 +812,19 @@ header {
 .container_cards{
   display:flex;
   gap:5px;
-  flex-wrap:wrap;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
 }
 .card_categoria{
   height: 100%;
-  width:250px;
+  width: 200px;
   list-style: none;
+}
+  border: 2px solid var(--primaryPurple);
+  border-radius: 5px;
+}
+.card_categoria img{
+  height: 200px;
+  width: 195px;
 }
