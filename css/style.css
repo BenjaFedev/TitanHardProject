@@ -237,6 +237,11 @@ header {
 
   margin-bottom: 18px;
 }
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon{
+    transform:scale(1.08);
+
+    background-color:#59f218;
 
 .heroTag i {
   font-size: 18px;
