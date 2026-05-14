@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -808,13 +809,30 @@ header {
     .brands img{
         height:22px;
     }
+.Titulo{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin: 20px 80px 0px 80px;
+}
+.Titulo h2{
+  margin: 0;
+  font-size:20px;
+  font-family:'Orbitron', sans-serif;
+  color:var(--white);
+}
+.Link_flechita{
+  margin: 0;
+  color: var(--secondaryPurple);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Orbitron";
 }
 .container_cards{
   display:flex;
   gap:5px;
   flex-direction: row;
   justify-content: center;
-  margin-top: 15px;
 }
 .card_categoria{
   height: 100%;
@@ -823,6 +841,7 @@ header {
 }
   border: 2px solid var(--primaryPurple);
   border-radius: 5px;
+  margin-top: 20px;
 }
 .card_categoria img{
   height: 200px;
