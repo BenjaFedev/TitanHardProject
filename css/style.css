@@ -524,6 +524,37 @@ header {
     0 0 20px rgba(89, 242, 24, 0.5);
 }
 
+.bannerImg{
+    width:100%;
+    padding:25px 40px;
+    background:transparent;
+    overflow:hidden;
+}
+
+.brands{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.brands img{
+    height:32px;
+    width:auto;
+    object-fit:contain;
+    filter:grayscale(100%) brightness(0.8);
+    opacity:0.55;
+    transition:0.3s ease;
+}
+
+.brands img:hover{
+    opacity:1;
+    transform:scale(1.08);
+    filter:grayscale(0%) brightness(1);
+}
+
 @media (min-width: 992px) {
   .dropdownMenuCustom {
     display: block;
@@ -746,4 +777,31 @@ header {
     width: 34px;
     height: 34px;
   }
+}
+
+@media(max-width:768px){
+
+    .brandsImg{
+        padding:20px;
+    }
+    .brands{
+        justify-content:center;
+        gap:25px;
+    }
+    .brands img{
+        height:26px;
+    }
+
+}
+
+@media(max-width:480px){
+    .bannerImg{
+        padding:15px;
+    }
+    .brands{
+        gap:20px;
+    }
+    .brands img{
+        height:22px;
+    }
 }
