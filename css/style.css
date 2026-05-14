@@ -808,6 +808,24 @@ header {
     .brands img{
         height:22px;
     }
+.Titulo{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin: 20px 80px 0px 80px;
+}
+.Titulo h2{
+  margin: 0;
+  font-size:20px;
+  font-family:'Orbitron', sans-serif;
+  color:var(--white);
+}
+.Link_flechita{
+  margin: 0;
+  color: var(--secondaryPurple);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Orbitron";
 }
 .Titulo{
   display:flex;
@@ -1401,5 +1419,23 @@ font-weight: 600;
         width: 100%;
         height: 48px;
     }
+}.container_cards{
+  display:flex;
+  gap:5px;
+  flex-direction: row;
+  justify-content: center;
+}
+.card_categoria{
+  height: 100%;
+  width: 200px;
+  list-style: none;
+}
+  border: 2px solid var(--primaryPurple);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.card_categoria img{
+  height: 200px;
+  width: 195px;
 }
 
