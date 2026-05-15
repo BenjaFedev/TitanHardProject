@@ -820,8 +820,14 @@ header {
   font-family:'Orbitron', sans-serif;
   color:var(--white);
 }
+.parrafo_card{
+text-align: left;
+margin-left: 20px;
+font-weight: 600;
+}
 .Link_flechita{
   margin: 0;
+  text-decoration: none;
   color: var(--secondaryPurple);
   font-size: 15px;
   font-weight: bold;
@@ -1420,22 +1426,27 @@ font-weight: 600;
         height: 48px;
     }
 }.container_cards{
+  background-color: rgb(14, 0, 12);
   display:flex;
-  gap:5px;
+  gap:15px;
   flex-direction: row;
   justify-content: center;
+  color: var(--white);
+  font-weight: 500;
 }
 .card_categoria{
   height: 100%;
   width: 200px;
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
   border: 2px solid var(--primaryPurple);
   border-radius: 5px;
   margin-top: 20px;
+  transition: 0.3 ease;
 }
 .card_categoria img{
   height: 200px;
   width: 195px;
 }
-
