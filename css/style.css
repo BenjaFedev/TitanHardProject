@@ -849,7 +849,6 @@ font-weight: 600;
   display: flex;
   flex-direction: column;
   list-style: none;
-}
   border: 2px solid var(--primaryPurple);
   border-radius: 5px;
   margin-top: 20px;
