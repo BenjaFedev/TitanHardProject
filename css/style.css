@@ -821,29 +821,85 @@ header {
   font-family:'Orbitron', sans-serif;
   color:var(--white);
 }
+.parrafo_card{
+text-align: left;
+margin-left: 20px;
+font-weight: 600;
+}
 .Link_flechita{
   margin: 0;
+  text-decoration: none;
   color: var(--secondaryPurple);
   font-size: 15px;
   font-weight: bold;
   font-family: "Orbitron";
 }
 .container_cards{
+  background-color: rgb(14, 0, 12);
   display:flex;
-  gap:5px;
+  gap:15px;
   flex-direction: row;
   justify-content: center;
+  color: var(--white);
+  font-weight: 500;
 }
 .card_categoria{
   height: 100%;
   width: 200px;
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
   border: 2px solid var(--primaryPurple);
   border-radius: 5px;
   margin-top: 20px;
+  transition: 0.3 ease;
 }
 .card_categoria img{
   height: 200px;
   width: 195px;
 }
+<<<<<<< HEAD
+=======
+.card_categoria:hover{
+  transform: scale(1.05);
+}
+.card_categoria:nth-child(1){
+  border: 1px solid var(--secondaryPurple);
+  border-radius: 5px;
+}
+.card_categoria:nth-child(2){
+  border: 1px solid var(--lightPurple);
+  border-radius: 5px;
+}
+.card_categoria:nth-child(3){
+  border: 1px solid var(--primaryPurple);
+  border-radius: 5px;
+}
+.card_categoria:nth-child(4){
+  border: 1px solid var(--primaryGreen);
+  border-radius: 5px;
+}
+.card_categoria:nth-child(5){
+  border: 1px solid var(--secondaryGreen);
+  border-radius: 5px;
+}
+.card_categoria:nth-child(6){
+  border: 1px solid var(--primaryYellow);
+  border-radius: 5px;
+}
+.link_cards{
+  text-decoration: none;
+  color: var(--primaryYellow);
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  transition: 0.3 ease;
+}
+.link_cards:hover{
+  transform: rotate(-5deg)
+}
+>>>>>>> ae84778 (complete las cards poniendole sus respectivos elementos en html y en css,listas para correccion)
