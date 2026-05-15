@@ -859,8 +859,6 @@ font-weight: 600;
   height: 200px;
   width: 195px;
 }
-<<<<<<< HEAD
-=======
 .card_categoria:hover{
   transform: scale(1.05);
 }
@@ -902,4 +900,3 @@ font-weight: 600;
 .link_cards:hover{
   transform: rotate(-5deg)
 }
->>>>>>> ae84778 (complete las cards poniendole sus respectivos elementos en html y en css,listas para correccion)
