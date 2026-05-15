@@ -1441,11 +1441,6 @@ font-weight: 600;
   flex-direction: column;
   list-style: none;
 }
-  border: 2px solid var(--primaryPurple);
-  border-radius: 5px;
-  margin-top: 20px;
-  transition: 0.3 ease;
-}
 .card_categoria img{
   height: 200px;
   width: 195px;
