@@ -1029,3 +1029,34 @@ font-weight: 600;
     display: none;
   }
 }
+@media (max-width: 1024px){
+  .Titulo{
+    margin: 20px 20px 0px 20px;
+  }
+  .Titulo h2{
+    font-size: 20px;
+  }
+  .container_cards{
+    flex-direction: row;
+    align-items: center;
+  }
+  .card_categoria{
+    width: 90%;
+    max-width: 320px;
+    height: 340px;
+  }
+  .card_categoria img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+  .parrafo_card{
+    font-size: 16px;
+  }
+  .link_cards{
+    font-size: 15px;
+  }
+  .card_categoria:nth-child(6){
+    display: none;
+  }
+}
