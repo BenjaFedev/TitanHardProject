@@ -1499,9 +1499,9 @@ font-weight: 600;
   position: relative;
 }
 .card_categoria:nth-child(5){
-  border: 1px solid var(--secondaryGreen);
+  border: 1px solid #4FC3F7;
   border-radius: 5px;
-    background-image: url(../assets/img/card-cian.png);
+    background-image: url(../assets/img/card-celeste.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1561,20 +1561,8 @@ font-weight: 600;
   .link_cards{
     font-size: 15px;
   }
-  .card_categoria:nth-child(3){
-    display: none;
-  }
-  .card_categoria:nth-child(4){
-    display: none;
-  }
-  .card_categoria:nth-child(5){
-    display: none;
-  }
-  .card_categoria:nth-child(6){
-    display: none;
-  }
 }
-@media (min-width: 320px) and (max-width: 426px){
+@media (max-width: 426px){
     .Titulo{
     margin: 20px 20px 0px 20px;
   }
@@ -1585,12 +1573,10 @@ font-weight: 600;
     font-weight: 300;
   }
   .container_cards{
-    align-items: center;
+
   }
   .card_categoria{
-    width: 80%;
-    max-width: 320px;
-    height: 340px;
+ 
   }
   .card_categoria img{
     width: 100%;
@@ -1602,21 +1588,6 @@ font-weight: 600;
   }
   .link_cards{
     font-size: 15px;
-  }
-  .card_categoria:nth-child(2){
-    display: none;
-  }
-    .card_categoria:nth-child(3){
-    display: none;
-  }
-  .card_categoria:nth-child(4){
-    display: none;
-  }
-  .card_categoria:nth-child(5){
-    display: none;
-  }
-  .card_categoria:nth-child(6){
-    display: none;
   }
 }
 @media (max-width: 1024px){
@@ -1646,7 +1617,5 @@ font-weight: 600;
   .link_cards{
     font-size: 15px;
   }
-  .card_categoria:nth-child(6){
-    display: none;
-  }
+
 }
