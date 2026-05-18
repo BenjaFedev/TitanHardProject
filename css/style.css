@@ -975,7 +975,6 @@ header {
         height:22px;
     }
 }
-<<<<<<< HEAD
 @media (max-width: 1200px) {
   .prevArrow {
     left: -10px;
@@ -984,14 +983,14 @@ header {
     right: -10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .carouselArrow {
     display: none;
   }
   .productCard {
     min-width: 200px;
   }
-=======
+}
 .foro{
   height: 150px;
 }
@@ -1094,5 +1093,4 @@ header {
 .formulario button:hover{
     background: var(--secondaryGreen);
     transform: scale(1.03);
->>>>>>> fb370a0 (modifique el form-foto para que se adapte mas al diseño del mockap y cambie tanto en html las clases y algunos textos,como en css le cambie algunas propiedades)
 }
