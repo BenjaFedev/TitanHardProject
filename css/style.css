@@ -1245,11 +1245,115 @@ font-weight: 600;
     right: -10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .carouselArrow {
     display: none;
   }
   .productCard {
     min-width: 200px;
   }
+}
+.foro{
+  height: 150px;
+}
+.form_foro{
+    width: 90%;
+    max-width: 1200px;
+    background: var(--darkGray);
+    padding: 2px;
+    border-radius:20%;
+    margin: 20px auto;
+    background: linear-gradient(
+        90deg,
+        #b000ff,
+        #2b0038,
+        #1b1b00,
+        #d4ff00
+    );
+}
+.container_foro{
+    background: var(--black);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 16px;
+    color: var(--white);
+    font-family: sans-serif;
+}
+.carta_foro{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.carta{
+    font-size: 80px;
+    color: var(--primaryPurple);
+    text-shadow: 0 0 10px var(--primaryPurple);
+}
+.texto_de_subscripcion{
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.texto_de_subscripcion p:first-child{
+    margin: 0 0 4px;
+}
+
+.texto_de_subscripcion p:last-child{
+    margin: 0 0 4px;
+}
+.texto_oferta{
+  color: var(--primaryGreen);
+  font-size: 30px;
+  line-height: 1;
+}
+.separador{
+  width: 3px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.texto_oferta{
+  font-size: 20px;
+  color: var(--primaryGreen);
+}
+.texto_novedades_y_mas{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.formulario input{
+    background: transparent;
+    border: 1px solid #333;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    width: 250px;
+}
+.formulario input::placeholder{
+    color: #8a8a8a;
+}
+.formulario button{
+    height: 45px;
+    padding: 0 35px;
+    border: none;
+    border-radius: 6px;
+    background: var(--primaryGreen);
+    color: var(--black);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 0 15px var(--greenShadow);
+}
+
+.formulario button:hover{
+    background: var(--secondaryGreen);
+    transform: scale(1.03);
 }
