@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* ESTO ES VITAL: Si borrás esto, el footer se queda sin colores */
 :root {
   --primaryPurple: #951196;
   --secondaryPurple: #bc26bd;
@@ -28,12 +27,8 @@
   --buttonGradient: linear-gradient(135deg, #951196, #59f218);
 }
 
-Z/* =========================================
-   ESTILOS DEL FOOTER (RÉPLICA DE IMAGEN)
-   ========================================= */
-
 .footerCustom {
-    background-color: var(--black); /* Fondo súper oscuro */
+    background-color: var(--black); 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     color: var(--white);
     font-family: inherit;
@@ -47,7 +42,7 @@ Z/* =========================================
 .footerSubLogo {
     color: #9a9a9a;
     font-size: 0.75rem;
-    letter-spacing: 2px; /* Letras separadas como en tu imagen */
+    letter-spacing: 2px; 
     margin-top: 5px;
     font-weight: 600;
 }
@@ -73,7 +68,7 @@ Z/* =========================================
     transition: var(--transition);
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre el icono y el texto en la columna 4 */
+    gap: 10px; 
 }
 
 .footerLinks a i, .footerSchedule i {
@@ -81,13 +76,13 @@ Z/* =========================================
 }
 
 .footerLinks a:hover {
-    color: var(--primaryPurple); /* Brillo violeta al pasar el mouse */
+    color: var(--primaryPurple); 
 }
 
 .footerSocials {
     display: flex;
     gap: 10px;
-    justify-content: center; /* Centrado en móviles */
+    justify-content: center; 
 }
 
 .footerSocials a {
@@ -98,7 +93,7 @@ Z/* =========================================
     height: 35px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid var(--primaryPurple); /* Borde violeta como en la imagen */
+    border: 1px solid var(--primaryPurple);
     color: var(--white);
     font-size: 0.9rem;
     text-decoration: none;
@@ -123,15 +118,37 @@ Z/* =========================================
 }
 
 .footerBottom i {
-    color: var(--primaryPurple); /* El corazoncito violeta */
+    color: var(--primaryPurple); 
     margin-left: 5px;
 }
 
-/* =========================================
-   MEDIA QUERIES DEL FOOTER
-   ========================================= */
 @media(min-width: 992px) {
     .footerSocials {
-        justify-content: flex-start; /* En PC las redes se alinean a la izquierda */
+        justify-content: flex-start; 
     }
+}
+@media (max-width: 768px) {
+
+    .footerCustom {
+        text-align: center;
+    }
+
+    .footerLinks {
+        align-items: center;
+    }
+
+    .footerLinks a,
+    .footerSchedule {
+        justify-content: center;
+    }
+
+    .footerSocials {
+        justify-content: center;
+    }
+
+    .logoFooter {
+        margin: 0 auto;
+        display: block;
+    }
+
 }
