@@ -1381,7 +1381,7 @@ font-weight: 600;
         display: none; 
     }
     .texto_novedades_y_mas {
-        flex-direction: column; /* El texto de la oferta y el formulario se apilan */
+        flex-direction: column;
         gap: 15px;
         width: 100%;
     }
