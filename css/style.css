@@ -671,7 +671,7 @@ header {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px){
   .heroContent h1 {
     font-size: 1.8rem;
   }
@@ -808,6 +808,7 @@ header {
     .brands img{
         height:22px;
     }
+}
 .Titulo{
   display:flex;
   justify-content:space-between;
