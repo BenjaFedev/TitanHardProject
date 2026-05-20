@@ -1,0 +1,83 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root {
+--primaryPurple: #951196;
+--secondaryPurple: #bc26bd;
+--lightPurple: #bf60bf;
+--primaryGreen: #59f218;
+--secondaryGreen: #3cc900;
+--primaryYellow: #edd600;
+--black: #000000;
+--darkGray: #0d0d0d;
+--lightBlack: #111111;
+--white: #ffffff;
+--purpleBorder: rgba(149, 17, 150, 0.5);
+--greenShadow: rgba(89, 242, 24, 0.3);
+--navbarGradient: linear-gradient(
+90deg,
+#000000 0%,
+#120012 40%,
+#000000 100%
+);
+--buttonGradient: linear-gradient(135deg, #951196, #59f218);
+}
+body {
+background-color: rgb(14, 0, 12);
+overflow-x: hidden;
+font-family: "Barlow", sans-serif;
+background-image: url(../assets/img/fondo_contacto.png);
+background-size:cover;
+background-repeat:no-repeat;
+}
+.footerCustom {
+background-color: #000;
+color: #fff;
+}
+
+.logoFooter {
+max-width: 190px;
+}
+
+.footerSubLogo {
+color: #9a9a9a;
+font-size: 0.75rem;
+letter-spacing: 2px;
+}
+.footerTitle {
+font-size: 0.85rem;
+font-weight: 700;
+margin-bottom: 20px;
+}
+.footerLinks a {
+color: #9a9a9a;
+text-decoration: none;
+font-size: 0.85rem;
+transition: 0.3s ease;
+}
+.footerLinks a:hover {
+color: #951196;
+}
+.footerSocials a {
+color: white;
+font-size: 1.2rem;
+transition: 0.3s ease;
+}
+.footerSocials a:hover {
+color: #59f218;
+transform: translateY(-2px);
+}
+.footerBottom {
+border-top: 1px solid #333;
+}
+.footerBottom p {
+color: #7a7a7a;
+font-size: 0.8rem;
+margin: 0;
+}
+.footerSchedule {
+color: #9b9b9b;
+font-size: 14px;
+}
