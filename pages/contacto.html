@@ -20,9 +20,41 @@
     <header></header>
     <main>
         <section class="contactenos">
+    <a href="../index.html" class="link_volver">Volver a la pagina principal ⮞</a>
             <article>
-                <a href="../index.html" class="link_volver">Volver a la pagina principal ⮞</a>
-                <p>Escribenos tu consulta</p>
+                <p class="texto_contactos">Escribenos tu consulta 👾​</p>
+            <div class="input">            
+            <input
+            type="text"
+            id="nombre_apellido"
+            name="nombre_apellido"
+            placeholder="Escribe Tu Nombre y apellido"
+            required
+            minlength="3"
+            maxlength="40"
+            />
+            <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email@gmail.com"
+            required
+            minlength="5"
+            maxlength="40"
+            />
+            <input type="tel" 
+            name="telefono" 
+            placeholder="381 8238296" 
+            maxlength="15">
+            <textarea 
+            name="Consulta" 
+            id="consulta" 
+            rows="5"
+            required minlength="10" 
+            maxlength="200" 
+            placeholder="Escriba su consulta">
+            </textarea>
+            </div>
             </article>
         </section>
     </main>

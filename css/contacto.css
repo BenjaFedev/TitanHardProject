@@ -26,11 +26,58 @@ box-sizing: border-box;
 }
 body {
 background-color: rgb(14, 0, 12);
+color: var(--white);
 overflow-x: hidden;
 font-family: "Barlow", sans-serif;
 background-image: url(../assets/img/fondo_contacto.png);
 background-size:cover;
 background-repeat:no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.contactenos{
+    width: 700px;
+    max-width:700px;
+    height: 90%;
+    padding: 40px 40px;
+    border-radius:25px;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(149,17,150,0.4);
+}
+.link_volver{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--primaryPurple);
+    transition: 0.5 ease;
+}
+.link_volver:hover{
+    transform:translateY(-3px) ;
+    color: var(--secondaryGreen);
+}
+.texto_contactos{
+    margin: 0;
+    margin-top: 30px;
+}
+input{
+    margin-top: 10px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px; 
 }
 .footerCustom {
 background-color: #000;
