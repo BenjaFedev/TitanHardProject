@@ -23,7 +23,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbarCustom">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="../index.html">
                         <img src="../assets/img/LogoHome.png" alt="TitanHard" class="logoNavbar img-fluid"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarContent">
@@ -196,16 +196,20 @@
                                     <i class="fa-solid fa-phone"></i>
                                     <input type="tel" id="telefono" placeholder="+54 381 000000" required
                                         pattern="[0-9+\s]+" minlength="8" maxlength="18" title="Solo números"
-                                        autocomplete="tel" />
+                                        autocomplete="tel" oninput="this.value = this.value.replace(/\D/g, '')"/>
                                 </div>
                             </div>
                             <div class="inputForm">
                                 <label for="cp">
                                     CÓDIGO POSTAL
                                 </label>
-                                <div class="inputBox"><i class="fa-solid fa-location-dot"></i>
+
+                                <div class="inputBox">
+                                    <i class="fa-solid fa-location-dot"></i>
+
                                     <input type="text" id="cp" placeholder="4000" required pattern="[0-9]{4,8}"
-                                        title="Solo números" maxlength="8" autocomplete="postal-code" />
+                                        title="Solo números" maxlength="8" autocomplete="postal-code"
+                                        oninput="this.value = this.value.replace(/\D/g, '')" />
                                 </div>
                             </div>
                         </div>
