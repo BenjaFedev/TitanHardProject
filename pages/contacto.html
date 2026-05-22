@@ -24,7 +24,8 @@
             <article>
                 <p class="texto_contactos">Escribenos tu consulta 👾​</p>
                 <form action="">
-            <div class="input">            
+            <div class="input">        
+            <label for="nombre_apellido">Nombre y Apellido</label>   
             <input
             type="text"
             id="nombre_apellido"
@@ -34,6 +35,7 @@
             minlength="3"
             maxlength="40"
             />
+            <label for="email">Email</label>
             <input
             type="email"
             id="email"
@@ -43,11 +45,13 @@
             minlength="5"
             maxlength="40"
             />
+            <label for="telefono">Telefono</label>
             <input type="tel" 
             name="telefono" 
             placeholder="381 8238296" 
             maxlength="15"
             oninput="this.value = this.value.replace(/\D/g, '')">
+            <label for="consulta">Consulta</label>
             <textarea 
             name="Consulta" 
             id="consulta" 

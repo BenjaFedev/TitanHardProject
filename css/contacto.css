@@ -114,6 +114,45 @@ textarea:focus{
     color: var(--primaryYellow);
     box-shadow: 0 0 10px rgba(149, 17, 150, 0.6);
 }
+@media (max-width: 426px) {
+    body{
+    padding: 20px;
+    align-items: flex-start;
+}
+    .contactenos{
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 15px;
+    border-radius: 18px;
+    text-align: center;
+}
+    .link_volver{
+    font-size: 16px;
+}
+    .texto_contactos{
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+    .input{
+    gap: 15px;
+}
+    input,
+    .input textarea{
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+}
+    .input textarea{
+    min-height: 140px;
+}
+    .boton_enviar{
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+}
+}
+
 .footerCustom {
 background-color: #000;
 color: #fff;
