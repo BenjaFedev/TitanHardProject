@@ -41,7 +41,7 @@ min-height: 100vh;
     width: 700px;
     max-width:700px;
     height: 90%;
-    padding: 40px 40px;
+    padding: 20px 20px;
     border-radius:25px;
     background:rgba(0,0,0,0.5);
     backdrop-filter:blur(10px);
@@ -51,26 +51,39 @@ min-height: 100vh;
     margin-bottom: 20px;
     text-decoration: none;
     color: var(--primaryPurple);
-    transition: 0.5 ease;
+    font-size: 20px;
+    font-weight: 600;
 }
 .link_volver:hover{
-    transform:translateY(-3px) ;
     color: var(--secondaryGreen);
 }
 .texto_contactos{
     margin: 0;
     margin-top: 30px;
+    font-size: 18px;
 }
 input{
     margin-top: 10px;
     padding: 12px 15px;
     font-size: 16px;
     border-radius: 10px;
+    background-color: var(--darkGray);
+    border: 2px solid var(--secondaryGreen);
+    color: var(--white);
 }
+input:focus{
+    outline: none;
+    border: 2px solid var(--primaryPurple);
+    box-shadow: 0 0 10px rgba(149, 17, 150, 0.6);
+}
+
 .input{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+textarea:focus{
+    outline: none;
 }
 .input textarea {
     width: 100%;
@@ -78,6 +91,28 @@ input{
     padding: 12px 15px;
     font-size: 16px;
     border-radius: 10px; 
+    background-color: var(--darkGray);
+    border: 2px solid var(--secondaryGreen);
+    color: var(--white);
+    overflow-y: hidden;
+}
+.boton_enviar{
+    width: 250px;
+    padding: 5px 2px; 
+    margin: auto;
+    background-color: var(--darkGray);
+    border-radius: 10px;
+    border: 2px solid var(--secondaryGreen);
+    color: var(--white);
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.boton_enviar:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    border: 2px solid var(--primaryPurple);
+    color: var(--primaryYellow);
+    box-shadow: 0 0 10px rgba(149, 17, 150, 0.6);
 }
 .footerCustom {
 background-color: #000;
