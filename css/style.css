@@ -1537,7 +1537,7 @@ header {
 }
 
 .infoProducto span {
-    color: var(--secondaryGreen);
+    color: var(--primaryGreen);
     font-weight: bold;
 }
 
