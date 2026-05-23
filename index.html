@@ -106,23 +106,23 @@
                             </button>
                         </form>
                         <div class="navbarIcons">
-                                <a href="../pages/login.html">
-                                    <i class="fa-solid fa-circle-user"></i>
-                                </a><a href="../pages/carrito.html">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                            </div>
+                            <a href="../pages/login.html">
+                                <i class="fa-solid fa-circle-user"></i>
+                            </a><a href="../pages/carrito.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="heroSection">
-            <div class="heroBackground"></div>
-            <div class="container heroContainer">
-                <div class="heroContent">
-                    <div class="heroTag">
+        <section class="bannerPrincipal">
+            <div class="bannerFondo"></div>
+            <div class="container contenidoBanner">
+                <div class="textoBanner">
+                    <div class="miniTitulo">
                         <i class="fa-solid fa-headset"></i>
                         <span>HARDWARE. RENDIMIENTO. PASIÓN</span>
                     </div>
@@ -136,7 +136,7 @@
                         Los mejores insumos y periféricos gamer
                         para llevar tu experiencia al siguiente nivel.
                     </p>
-                    <div class="heroButtons">
+                    <div class="botonesBanner">
                         <a href="./pages/error-404.html" class="btnProducts">
                             VER PRODUCTOS
                         </a>
@@ -144,9 +144,9 @@
                             OFERTAS
                         </a>
                     </div>
-                    <div class="heroFeatures">
-                        <div class="heroFeature">
-                            <div class="heroFeatureIcon">
+                    <div class="ventajasBanner">
+                        <div class="ventaja">
+                            <div class="iconoVentaja">
                                 <i class="fa-solid fa-truck-fast"></i>
                             </div>
                             <div>
@@ -154,8 +154,8 @@
                                 <span>A todo el país</span>
                             </div>
                         </div>
-                        <div class="heroFeature">
-                            <div class="heroFeatureIcon">
+                        <div class="ventaja">
+                            <div class="iconoVentaja">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
                             <div>
@@ -163,8 +163,8 @@
                                 <span>Sitio 100% protegido</span>
                             </div>
                         </div>
-                        <div class="heroFeature">
-                            <div class="heroFeatureIcon">
+                        <div class="ventaja">
+                            <div class="iconoVentaja">
                                 <i class="fa-solid fa-headset"></i>
                             </div>
                             <div>
@@ -172,43 +172,44 @@
                                 <span>Asesoramiento real</span>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
-        <section class="featuresBanner">
-            <div class="featureItem">
-                <div class="featureIcon">
+        <section class="cajasInfo">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-regular fa-star"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>MARCAS LÍDERES</h3>
                     <p>En tecnología gamer</p>
                 </div>
             </div>
-            <div class="featureItem">
-                <div class="featureIcon">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-solid fa-shield-halved"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>CALIDAD GARANTIZADA</h3>
                     <p>Productos 100% originales</p>
                 </div>
             </div>
-            <div class="featureItem">
-                <div class="featureIcon">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-regular fa-credit-card"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>HASTA 6 CUOTAS</h3>
                     <p>Sin interés</p>
                 </div>
             </div>
-            <div class="featureItem">
-                <div class="featureIcon">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-solid fa-bolt"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>EXPERIENCIA GAMER</h3>
                     <p>Asesoramiento real</p>
                 </div>
@@ -476,4 +477,15 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const track = document.getElementById("productTrack");
+            ["btnNext", "btnPrev"].forEach(id => {
+                document.getElementById(id).onclick = () =>
+                    track.scrollBy({
+                        left: id === "btnNext" ? 260 : -260,
+                        behavior: "smooth"
+                    });
+            });
+        </script>
 </body>
