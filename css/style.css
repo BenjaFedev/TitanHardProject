@@ -1561,7 +1561,7 @@ header {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .btnComprar:hover {
