@@ -134,9 +134,9 @@
                         <div class="navbarIcons">
                             <a href="../pages/login.html">
                                 <i class="fa-solid fa-circle-user"></i>
-                            </a><a href="../pages/carrito.html">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
+                                <a href="#modalCarrito">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
                         </div>
                     </div>
                 </div>
@@ -144,6 +144,37 @@
         </nav>
     </header>
     <main>
+        <div id="modalCarrito" class="modalCarrito">
+            <div class="carritoContenido">
+                <a href="#" class="cerrarModal">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Tu carrito</h2>
+                <div class="productoCarrito">
+                    <img src="./assets/img/4060ti.png" alt="placa4060">
+                    <div class="infoProducto">
+                        <h3>Dual GeForce RTX 4060 8GB GDDR6</h3>
+                        <p>Cantidad: 1</p>
+                        <span>$1.120.000</span>
+                    </div>
+                </div>
+                <div class="productoCarrito">
+                    <img src="./assets/img/hyperX.png" alt="Mouse">
+                    <div class="infoProducto">
+                        <h3>Mouse Gamer</h3>
+                        <p>Cantidad: 2</p>
+                        <span>$169.000</span>
+                    </div>
+                </div>
+                <div class="totalCarrito">
+                    <h3>Total</h3>
+                    <span>$1.289.000</span>
+                </div>
+                <button class="btnComprar">
+                    Finalizar compra
+                </button>
+            </div>
+        </div>
         <section class="bannerPrincipal">
             <div class="bannerFondo"></div>
             <div class="container contenidoBanner">
@@ -198,7 +229,6 @@
                                 <span>Asesoramiento real</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
