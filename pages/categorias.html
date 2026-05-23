@@ -1,763 +1,572 @@
 <!doctype html>
 <html lang="es-AR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Titan Hard - Categorías de productos gamer"
-    />
-    <meta name="author" content="Benjamin Federico Mendez, Francisco Agustin Delgado Ojeda, José Alejandro Abella.">
-    <title>Titan Hard - Categorías</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="../assets/img/favicon.ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/categorias.css" />
-    <link rel="icon" href="../assets/img/LogoTitanHard.png" type="image/png" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbarCustom">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">
-            <img
-              src="../assets/img/LogoHome.png"
-              alt="TitanHard"
-              class="logoNavbar img-fluid"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarContent"
-            aria-controls="navbarContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav navbarLinks">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">INICIO</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  >PRODUCTOS</a
-                >
-                <ul class="dropdown-menu dropdownMenuCustom">
-                  <li><a class="dropdown-item" href="#">Teclados</a></li>
-                  <li><a class="dropdown-item" href="#">Mouses</a></li>
-                  <li><a class="dropdown-item" href="#">Headsets</a></li>
-                  <li><a class="dropdown-item" href="#">Monitores</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  >CATEGORÍAS</a
-                >
-                <ul class="dropdown-menu dropdownMenuCustom">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="categorias.html?cat=procesadores"
-                      >Procesadores</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="categorias.html?cat=placas-de-video"
-                      >Placas de Video</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
-              </li>
-            </ul>
-            <div class="navbarRight">
-              <form class="searchBox" onsubmit="return false;">
-                <input type="text" placeholder="Buscar productos..." />
-                <button type="submit">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </form>
-              <div class="navbarIcons">
-                <a href="../pages/login.html">
-                 <i class="fa-solid fa-circle-user"></i>
-                </a>
-                <a href="../pages/carrito.html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Titan Hard - Categorías de productos gamer" />
+  <meta name="author" content="Benjamin Federico Mendez, Francisco Agustin Delgado Ojeda, José Alejandro Abella.">
+  <title>Titan Hard - Categorías</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/img/favicon.ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/categorias.css" />
+  <link rel="icon" href="../assets/img/LogoTitanHard.png" type="image/png" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbarCustom">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/LogoHome.png" alt="TitanHard" class="logoNavbar img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav navbarLinks">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTOS</a>
+              <ul class="dropdown-menu dropdownMenuCustom">
+                <li><a class="dropdown-item" href="error-404.html">Teclados</a></li>
+                <li><a class="dropdown-item" href="error-404.html">Mouses</a></li>
+                <li><a class="dropdown-item" href="error-404.html">Headsets</a></li>
+                <li><a class="dropdown-item" href="error-404.html">Monitores</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">CATEGORÍAS</a>
+              <ul class="dropdown-menu dropdownMenuCustom">
+                <li>
+                  <a class="dropdown-item" href="categorias.html?cat=procesadores">Procesadores</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categorias.html?cat=placas-de-video">Placas de Video</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTO</a>
+              <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+          <div class="navbarRight">
+            <form class="searchBox" onsubmit="return false;">
+              <input type="text" placeholder="Buscar productos..." />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div class="navbarIcons">
+              <i class="fa-solid fa-circle-user"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <a href="../pages/login.html">
+                <i class="fa-solid fa-circle-user"></i>
+              </a>
+              <a href="../pages/carrito.html">
                 <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section
-        class="categoryHero"
-        id="categoryHero"
-        style="
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="categoryHero" id="categoryHero" style="
           background-image: url(&quot;../assets/img/bannerPrincipal.png&quot;);
-        "
-      >
-        <div class="categoryHeroOverlay"></div>
-        <div class="container position-relative z-2 text-center">
-          <h1 class="categoryHeroTitle" id="heroTitle">PLACAS DE VIDEO</h1>
-          <p class="categoryHeroDesc" id="heroDesc">
-            Potencia extrema para correr tus juegos al máximo en 4K y Ray
-            Tracing.
-          </p>
-        </div>
-      </section>
-
-      <div class="categorySpecsBanner">
-        <div class="container">
-          <div class="row g-0 justify-content-center" id="specsBanner">
-            <div class="col-6 col-md-3">
-              <div class="categorySpecItem">
-                <i class="fa-solid fa-bolt"></i>
-                <div>
-                  <div class="specLabel">Rendimiento</div>
-                  <div class="specValue">Hasta 4K / 144fps</div>
-                </div>
+        ">
+      <div class="categoryHeroOverlay"></div>
+      <div class="container position-relative z-2 text-center">
+        <h1 class="categoryHeroTitle" id="heroTitle">PLACAS DE VIDEO</h1>
+        <p class="categoryHeroDesc" id="heroDesc">
+          Potencia extrema para correr tus juegos al máximo en 4K y Ray
+          Tracing.
+        </p>
+      </div>
+    </section>
+    <div class="categorySpecsBanner">
+      <div class="container">
+        <div class="row g-0 justify-content-center" id="specsBanner">
+          <div class="col-6 col-md-3">
+            <div class="categorySpecItem">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <div class="specLabel">Rendimiento</div>
+                <div class="specValue">Hasta 4K / 144fps</div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="categorySpecItem">
-                <i class="fa-solid fa-memory"></i>
-                <div>
-                  <div class="specLabel">VRAM</div>
-                  <div class="specValue">8 GB — 24 GB GDDR6X</div>
-                </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="categorySpecItem">
+              <i class="fa-solid fa-memory"></i>
+              <div>
+                <div class="specLabel">VRAM</div>
+                <div class="specValue">8 GB — 24 GB GDDR6X</div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="categorySpecItem">
-                <i class="fa-solid fa-sun"></i>
-                <div>
-                  <div class="specLabel">Tecnología</div>
-                  <div class="specValue">Ray Tracing &amp; DLSS 3</div>
-                </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="categorySpecItem">
+              <i class="fa-solid fa-sun"></i>
+              <div>
+                <div class="specLabel">Tecnología</div>
+                <div class="specValue">Ray Tracing &amp; DLSS 3</div>
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="categorySpecItem">
-                <i class="fa-solid fa-shield-halved"></i>
-                <div>
-                  <div class="specLabel">Garantía</div>
-                  <div class="specValue">2 años oficial</div>
-                </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="categorySpecItem">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <div class="specLabel">Garantía</div>
+                <div class="specValue">2 años oficial</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <section class="categorySection py-5">
-        <div class="container">
-          <div class="categoryTabs mb-4" id="categoryTabs">
-            <button
-              class="categoryTab active"
-              data-cat="placas"
-              onclick="switchCategory('placas')"
-            >
-              <i class="fa-solid fa-display me-1"></i> Placas de Video
-            </button>
-            <button
-              class="categoryTab"
-              data-cat="procesadores"
-              onclick="switchCategory('procesadores')"
-            >
-              <i class="fa-solid fa-microchip me-1"></i> Procesadores
-            </button>
-          </div>
-
-          <div class="filterChips mb-3" id="filterChips">
-            <button
-              class="filterChip active"
-              onclick="filterChip(this, 'todos')"
-            >
-              Todos
-            </button>
-            <button class="filterChip" onclick="filterChip(this, 'nvidia')">
-              NVIDIA
-            </button>
-            <button class="filterChip" onclick="filterChip(this, 'amd')">
-              AMD
-            </button>
-            <button class="filterChip" onclick="filterChip(this, 'oferta')">
-              En oferta
-            </button>
-          </div>
-
-          <div
-            class="categoryToolbar mb-4 d-flex justify-content-between align-items-center flex-wrap gap-3"
-          >
-            <span class="text-white opacity-75" id="productCount">
-              Mostrando 1-8 de 8 productos
-            </span>
-            <select class="form-select w-auto customSelect" id="sortSelect">
-              <option selected>Ordenar por: Destacados</option>
-              <option value="1">Menor a Mayor precio</option>
-              <option value="2">Mayor a Menor precio</option>
-              <option value="3">Más vendidos</option>
-            </select>
-          </div>
-
-          <div class="categoryGrid" id="gridPlacas">
-            <div
-              class="productCard"
-              data-brand="nvidia"
-              style="
-                background-image: url(&quot;../assets/img/card-fondo.png&quot;);
-              "
-            >
-              <span class="discountBadge">-10%</span>
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="RTX 4060 Ti"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">ASUS RTX 4060 Ti Dual OC 8GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <div>
-                  <span class="productPriceOld">$611.000</span>
-                  <span class="productPrice">$549.999</span>
-                </div>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="nvidia"
-              style="
-                background-image: url(&quot;../assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="../assets/img/4060ti.png"
-                  alt="RTX 4070 Super"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">Gigabyte RTX 4070 Super Eagle 12GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$980.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="nvidia"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="RTX 4070 Ti"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">MSI RTX 4070 Ti Ventus 3X 12GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$1.150.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="amd"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <span class="discountBadge">-5%</span>
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="RX 7600"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">ASRock Radeon RX 7600 Challenger 8GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <div>
-                  <span class="productPriceOld">$410.000</span>
-                  <span class="productPrice">$389.500</span>
-                </div>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="amd"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="RX 7700 XT"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">Sapphire RX 7700 XT Pulse 12GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$720.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="amd"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <span class="discountBadge">-8%</span>
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="RX 7900 GRE"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">XFX Radeon RX 7900 GRE 16GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <div>
-                  <span class="productPriceOld">$1.560.000</span>
-                  <span class="productPrice">$1.435.000</span>
-                </div>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="nvidia"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="RTX 4080 Super"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">ASUS RTX 4080 Super ProArt 16GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$2.100.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="nvidia"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <span class="discountBadge">-15%</span>
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="RTX 4060"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">Palit RTX 4060 Dual 8GB</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <div>
-                  <span class="productPriceOld">$590.000</span>
-                  <span class="productPrice">$501.500</span>
-                </div>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="categoryGrid d-none" id="gridProcesadores">
-            <div
-              class="productCard"
-              data-brand="intel"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <span class="discountBadge">-12%</span>
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Core i9 14900K"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">Intel Core i9-14900K 24C/32T 6GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <div>
-                  <span class="productPriceOld">$1.250.000</span>
-                  <span class="productPrice">$1.099.000</span>
-                </div>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="intel"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Core i7 14700K"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">Intel Core i7-14700K 20C/28T 5.6GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$820.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="intel"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Core i5 14600K"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">Intel Core i5-14600K 14C/20T 5.3GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$540.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="amd"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <span class="discountBadge">-7%</span>
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Ryzen 9 7950X"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">AMD Ryzen 9 7950X 16C/32T 5.7GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <div>
-                  <span class="productPriceOld">$1.480.000</span>
-                  <span class="productPrice">$1.376.000</span>
-                </div>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="amd"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Ryzen 7 7800X3D"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">AMD Ryzen 7 7800X3D 8C/16T 5GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$950.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="amd"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Ryzen 5 7600X"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">AMD Ryzen 5 7600X 6C/12T 5.3GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$480.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="intel"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <span class="discountBadge">-10%</span>
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Core i9 13900KS"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">Intel Core i9-13900KS 24C 6.0GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <div>
-                  <span class="productPriceOld">$1.380.000</span>
-                  <span class="productPrice">$1.242.000</span>
-                </div>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="productCard"
-              data-brand="amd"
-              style="
-                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
-              "
-            >
-              <div class="cardImgWrapper">
-                <img
-                  src="./assets/img/4060ti.png"
-                  alt="Ryzen 9 7900X"
-                  class="img-fluid"
-                />
-              </div>
-              <h5 class="productTitle">AMD Ryzen 9 7900X 12C/24T 5.6GHz</h5>
-              <a href="#" class="verMasText"
-                >VER MÁS <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-              <div class="productFooter">
-                <span class="productPrice">$1.050.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <nav
-            class="paginationContainer mt-5"
-            aria-label="Paginación de productos"
-          >
-            <ul class="paginationCustom">
-              <li>
-                <a href="#" class="pageBtn" aria-label="Anterior">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </a>
-              </li>
-              <li><a href="#" class="pageBtn active">1</a></li>
-              <li><a href="#" class="pageBtn">2</a></li>
-              <li><a href="#" class="pageBtn">3</a></li>
-              <li>
-                <a href="#" class="pageBtn" aria-label="Siguiente">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
+    </div>
+    <section class="categorySection py-5">
+      <div class="container">
+        <div class="categoryTabs mb-4" id="categoryTabs">
+          <button class="categoryTab active" data-cat="placas" onclick="switchCategory('placas')">
+            <i class="fa-solid fa-display me-1"></i> Placas de Video
+          </button>
+          <button class="categoryTab" data-cat="procesadores" onclick="switchCategory('procesadores')">
+            <i class="fa-solid fa-microchip me-1"></i> Procesadores
+          </button>
         </div>
-      </section>
-    </main>
-
-    <footer>
-        <footer class="footerCustom mt-5 pt-5 pb-3">
-            <div class="container">
-                <div class="row gy-4 justify-content-center">
-                    <div class="col-12 col-lg-3 text-center text-lg-start">
-                        <a href="../index.html">
-                            <img src="../assets/img/LogoHome.png" alt="TitanHard" class="logoFooter img-fluid mb-2" />
-                        </a>
-                        <p class="footerSubLogo">INSUMOS GAMER</p>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-2 text-center text-lg-start">
-                        <h6 class="footerTitle">INFORMACIÓN</h6>
-                        <ul class="list-unstyled footerLinks">
-                            <li><a href="./pages/Nosotros.html" target="_blank">Quiénes somos</a></li>
-                            <li><a href="pages/error-404.html" target="_blank">Envíos y entregas</a></li>
-                            <li><a href="pages/error-404.html" target="_blank">Formas de pago</a></li>
-                            <li><a href="pages/error-404.html" target="_blank">Preguntas frecuentes</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 text-center text-lg-start">
-                        <h6 class="footerTitle">ATENCIÓN AL CLIENTE</h6>
-                        <ul class="list-unstyled footerLinks footerContact">
-                            <li><a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                            </li>
-                            <li><a href="https://www.google.com/maps" target="_blank"><i
-                                        class="fa-solid fa-location-dot"></i> Sucursal
-                                    Tucumán</a></li>
-                            <li><span class="footerSchedule"><i class="fa-regular fa-clock"></i> Lunes a Viernes de 10 a
-                                    18hs</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-2 text-center text-lg-start">
-                        <h6 class="footerTitle">SEGUINOS</h6>
-                        <div class="footerSocials d-flex justify-content-center justify-content-lg-start gap-3">
-                            <a href="https://www.instagram.com" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com" target="_blank"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5 pt-4 footerBottom">
-                    <div class="col-12 col-md-6 text-center text-md-start">
-                        <p>© 2024 Titan Hard - Todos los derechos reservados.</p>
-                    </div>
-                    <div class="col-12 col-md-6 text-center text-md-end">
-                        <p>Diseñado para gamers. Hecho con pasión. <i class="fa-solid fa-heart"></i></p>
-                    </div>
-                </div>
+        <div class="filterChips mb-3" id="filterChips">
+          <button class="filterChip active" onclick="filterChip(this, 'todos')">
+            Todos
+          </button>
+          <button class="filterChip" onclick="filterChip(this, 'nvidia')">
+            NVIDIA
+          </button>
+          <button class="filterChip" onclick="filterChip(this, 'amd')">
+            AMD
+          </button>
+          <button class="filterChip" onclick="filterChip(this, 'oferta')">
+            En oferta
+          </button>
+        </div>
+        <div class="categoryToolbar mb-4 d-flex justify-content-between align-items-center flex-wrap gap-3">
+          <span class="text-white opacity-75" id="productCount">
+            Mostrando 1-8 de 8 productos
+          </span>
+          <select class="form-select w-auto customSelect" id="sortSelect">
+            <option selected>Ordenar por: Destacados</option>
+            <option value="1">Menor a Mayor precio</option>
+            <option value="2">Mayor a Menor precio</option>
+            <option value="3">Más vendidos</option>
+          </select>
+        </div>
+        <div class="categoryGrid" id="gridPlacas">
+          <div class="productCard" data-brand="nvidia" style="
+                background-image: url(&quot;../assets/img/card-fondo.png&quot;);
+              ">
+            <span class="discountBadge">-10%</span>
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="RTX 4060 Ti" class="img-fluid" />
             </div>
-        </footer>
+            <h5 class="productTitle">ASUS RTX 4060 Ti Dual OC 8GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <div>
+                <span class="productPriceOld">$611.000</span>
+                <span class="productPrice">$549.999</span>
+              </div>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="nvidia" style="
+                background-image: url(&quot;../assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="../assets/img/4060ti.png" alt="RTX 4070 Super" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">Gigabyte RTX 4070 Super Eagle 12GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$980.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="nvidia" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="RTX 4070 Ti" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">MSI RTX 4070 Ti Ventus 3X 12GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$1.150.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="amd" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <span class="discountBadge">-5%</span>
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="RX 7600" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">ASRock Radeon RX 7600 Challenger 8GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <div>
+                <span class="productPriceOld">$410.000</span>
+                <span class="productPrice">$389.500</span>
+              </div>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="amd" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="RX 7700 XT" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">Sapphire RX 7700 XT Pulse 12GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$720.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="amd" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <span class="discountBadge">-8%</span>
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="RX 7900 GRE" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">XFX Radeon RX 7900 GRE 16GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <div>
+                <span class="productPriceOld">$1.560.000</span>
+                <span class="productPrice">$1.435.000</span>
+              </div>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="nvidia" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="RTX 4080 Super" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">ASUS RTX 4080 Super ProArt 16GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$2.100.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="nvidia" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <span class="discountBadge">-15%</span>
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="RTX 4060" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">Palit RTX 4060 Dual 8GB</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <div>
+                <span class="productPriceOld">$590.000</span>
+                <span class="productPrice">$501.500</span>
+              </div>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="categoryGrid d-none" id="gridProcesadores">
+          <div class="productCard" data-brand="intel" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <span class="discountBadge">-12%</span>
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Core i9 14900K" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">Intel Core i9-14900K 24C/32T 6GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <div>
+                <span class="productPriceOld">$1.250.000</span>
+                <span class="productPrice">$1.099.000</span>
+              </div>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="intel" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Core i7 14700K" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">Intel Core i7-14700K 20C/28T 5.6GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$820.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="intel" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Core i5 14600K" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">Intel Core i5-14600K 14C/20T 5.3GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$540.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="amd" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <span class="discountBadge">-7%</span>
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Ryzen 9 7950X" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">AMD Ryzen 9 7950X 16C/32T 5.7GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <div>
+                <span class="productPriceOld">$1.480.000</span>
+                <span class="productPrice">$1.376.000</span>
+              </div>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="amd" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Ryzen 7 7800X3D" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">AMD Ryzen 7 7800X3D 8C/16T 5GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$950.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="amd" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Ryzen 5 7600X" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">AMD Ryzen 5 7600X 6C/12T 5.3GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$480.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="intel" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <span class="discountBadge">-10%</span>
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Core i9 13900KS" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">Intel Core i9-13900KS 24C 6.0GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <div>
+                <span class="productPriceOld">$1.380.000</span>
+                <span class="productPrice">$1.242.000</span>
+              </div>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="productCard" data-brand="amd" style="
+                background-image: url(&quot;./assets/img/card-fondo.png&quot;);
+              ">
+            <div class="cardImgWrapper">
+              <img src="./assets/img/4060ti.png" alt="Ryzen 9 7900X" class="img-fluid" />
+            </div>
+            <h5 class="productTitle">AMD Ryzen 9 7900X 12C/24T 5.6GHz</h5>
+            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="productFooter">
+              <span class="productPrice">$1.050.000</span>
+              <button class="cartBtn" title="Agregar al carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <nav class="paginationContainer mt-5" aria-label="Paginación de productos">
+          <ul class="paginationCustom">
+            <li>
+              <a href="#" class="pageBtn" aria-label="Anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+              </a>
+            </li>
+            <li><a href="#" class="pageBtn active">1</a></li>
+            <li><a href="#" class="pageBtn">2</a></li>
+            <li><a href="#" class="pageBtn">3</a></li>
+            <li>
+              <a href="#" class="pageBtn" aria-label="Siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+  <footer class="footerCustom mt-5 pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-12 col-lg-3 text-center text-lg-start">
+          <a href="index.html" class="text-decoration-none">
+            <img src="../assets/img/LogoHome.png" alt="TitanHard" class="logoFooter img-fluid mb-2" />
+          </a>
+          <p class="footerSubLogo">INSUMOS GAMER</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2 text-center text-lg-start">
+          <h6 class="footerTitle">INFORMACIÓN</h6>
+          <ul class="list-unstyled footerLinks">
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Envíos y entregas</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 text-center text-lg-start">
+          <h6 class="footerTitle">ATENCIÓN AL CLIENTE</h6>
+          <ul class="list-unstyled footerLinks footerContact">
+            <li>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <i class="fa-solid fa-location-dot"></i> Sucursal Tucumán
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2 text-center text-lg-start">
+          <h6 class="footerTitle">SEGUINOS</h6>
+          <div class="footerSocials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 pt-4 footerBottom">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p>© 2024 Titan Hard - Todos los derechos reservados.</p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <p>
+            Diseñado para gamers. Hecho con pasión.
+            <i class="fa-solid fa-heart"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer>
+    <footer class="footerCustom mt-5 pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-12 col-lg-3 text-center text-lg-start">
+            <a href="../index.html">
+              <img src="../assets/img/LogoHome.png" alt="TitanHard" class="logoFooter img-fluid mb-2" />
+            </a>
+            <p class="footerSubLogo">INSUMOS GAMER</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 text-center text-lg-start">
+            <h6 class="footerTitle">INFORMACIÓN</h6>
+            <ul class="list-unstyled footerLinks">
+              <li><a href="./pages/Nosotros.html" target="_blank">Quiénes somos</a></li>
+              <li><a href="pages/error-404.html" target="_blank">Envíos y entregas</a></li>
+              <li><a href="pages/error-404.html" target="_blank">Formas de pago</a></li>
+              <li><a href="pages/error-404.html" target="_blank">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 text-center text-lg-start">
+            <h6 class="footerTitle">ATENCIÓN AL CLIENTE</h6>
+            <ul class="list-unstyled footerLinks footerContact">
+              <li><a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              </li>
+              <li><a href="https://www.google.com/maps" target="_blank"><i class="fa-solid fa-location-dot"></i>
+                  Sucursal
+                  Tucumán</a></li>
+              <li><span class="footerSchedule"><i class="fa-regular fa-clock"></i> Lunes a Viernes de 10 a
+                  18hs</span></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 text-center text-lg-start">
+            <h6 class="footerTitle">SEGUINOS</h6>
+            <div class="footerSocials d-flex justify-content-center justify-content-lg-start gap-3">
+              <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 pt-4 footerBottom">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <p>© 2024 Titan Hard - Todos los derechos reservados.</p>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <p>Diseñado para gamers. Hecho con pasión. <i class="fa-solid fa-heart"></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
       const categoryData = {
         placas: {
@@ -817,12 +626,9 @@
         if (cat === currentCat) return;
         currentCat = cat;
         currentFilter = "todos";
-
         const data = categoryData[cat];
-
         document.getElementById("heroTitle").textContent = data.title;
         document.getElementById("heroDesc").textContent = data.desc;
-
         const specsBanner = document.getElementById("specsBanner");
         specsBanner.innerHTML = data.specs
           .map(
@@ -838,38 +644,31 @@
           </div>`,
           )
           .join("");
-
         document.getElementById("productCount").textContent = data.count;
-
         document.getElementById("gridPlacas").classList.add("d-none");
         document.getElementById("gridProcesadores").classList.add("d-none");
         document.getElementById(data.grid).classList.remove("d-none");
-
         document.querySelectorAll(".categoryTab").forEach((btn) => {
           btn.classList.toggle("active", btn.dataset.cat === cat);
         });
-
         document.querySelectorAll(".filterChip").forEach((chip) => {
           chip.classList.toggle(
             "active",
             chip.textContent.trim().toLowerCase() === "todos",
           );
         });
-
         document
           .querySelectorAll(`#${data.grid} .productCard`)
           .forEach((card) => {
             card.style.display = "";
           });
       }
-
       function filterChip(el, filter) {
         currentFilter = filter;
         document
           .querySelectorAll(".filterChip")
           .forEach((c) => c.classList.remove("active"));
         el.classList.add("active");
-
         const activeGrid = categoryData[currentCat].grid;
         document
           .querySelectorAll(`#${activeGrid} .productCard`)
@@ -885,7 +684,6 @@
             }
           });
       }
-
       document.querySelectorAll(".pageBtn").forEach((btn) => {
         btn.addEventListener("click", function (e) {
           e.preventDefault();
@@ -897,5 +695,6 @@
         });
       });
     </script>
-  </body>
+</body>
+
 </html>
