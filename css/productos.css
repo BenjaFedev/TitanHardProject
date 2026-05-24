@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+root {
+  --primaryPurple: #951196;
+  --secondaryPurple: #bc26bd;
+  --lightPurple: #bf60bf;
+  --primaryGreen: #59f218;
+  --secondaryGreen: #3cc900;
+  --primaryYellow: #edd600;
+  --black: #000000;
+  --darkGray: #0d0d0d;
+  --lightBlack: #111111;
+  --white: #ffffff;
+  --purpleBorder: rgba(149, 17, 150, 0.5);
+  --greenShadow: rgba(89, 242, 24, 0.3);
+  --transition: 0.3s ease;
+  --navbarGradient: linear-gradient(
+    90deg,
+    #000000 0%,
+    #120012 40%,
+    #000000 100%
+  );
+  --buttonGradient: linear-gradient(135deg, #951196, #59f218);
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--black);
+}
