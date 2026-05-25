@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,16 +37,20 @@
                                 <li><a class="dropdown-item" href="./pages/error-404.html">Teclados</a></li>
                                 <li><a class="dropdown-item" href="./pages/error-404.html">Mouses</a></li>
                                 <li><a class="dropdown-item" href="./pages/error-404.html">Auriculares</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Mousepad</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Webcam</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Cables</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="pages/categorias.html"
                                 data-bs-toggle="dropdown">CATEGORÍAS</a>
                             <ul class="dropdown-menu dropdownMenuCustom">
-                                <li><a class="dropdown-item"
-                                        href="pages/categorias.html?cat=procesadores">Procesadores</a></li>
-                                <li><a class="dropdown-item" href="pages/categorias.html?cat=placas-de-video">Placas de
+
+                                <li><a class="dropdown-item" href="./pages/categorias-placas.html">Placas de
                                         Video</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./pages/categorias-procesadores.html">Procesadores</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
@@ -202,6 +207,17 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
                 <div class="carousel-item active">
                     <img src="./assets/img/Banner1.png" class="d-block w-100" alt="Banner principal 1">
                 </div>
@@ -212,7 +228,7 @@
                     <img src="./assets/img/Banner3.png" class="d-block w-100" alt="Banner principal 3">
                 </div>
             </div>
-          </div>
+        </div>
         </div>
         <section class="bannerImg">
             <div class="brands">
@@ -270,100 +286,114 @@
                         VER TODOS <i class="fa-solid fa-chevron-right ms-1"></i>
                     </a>
                 </div>
-                <div class="carouselWrapper position-relative">
-                    <button class="carouselArrow prevArrow" id="btnPrev">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <div class="productTrack" id="productTrack">
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <span class="discountBadge">-10%</span>
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/4060ti.png" alt="RTX 4060" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">
-                                ASUS GeForce RTX 4060 Dual 8GB GDDR6
-                            </h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$499.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/k552RGB.png" alt="Teclado Redragon" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">
-                                Teclado Redragon K552 RGB Mechanical
-                            </h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$59.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/G pro.png" alt="Logitech G Pro X" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">Logitech G Pro X Superlight</h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$129.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <span class="discountBadge">-15%</span>
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/hyperX.png" alt="HyperX Cloud" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">HyperX Cloud Alpha S Black</h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$89.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
+
+                <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center gap-3">
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <span class="discountBadge">-10%</span>
+                                    <div class="cardImgWrapper"><img src="./assets/img/4060ti.png" alt="RTX 4060"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">ASUS GeForce RTX 4060 Dual 8GB GDDR6</h5>
+                                    <a href="#" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$499.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/k552RGB.png"
+                                            alt="Teclado Redragon" class="img-fluid" /></div>
+                                    <h5 class="productTitle">Teclado Redragon K552 RGB Mechanical</h5>
+                                    <a href="#" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$59.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/G pro.png" alt="Logitech G Pro X"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">Logitech G Pro X Superlight</h5>
+                                    <a href="#" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$129.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/Aoc24.png" alt="Monitor AOC" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">AOC 24" 165Hz 1ms IPS Full HD</h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$199.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/fuente.png" alt="Fuente Corsair" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">
-                                Fuente Corsair CX650 650W 80 Plus Bronze
-                            </h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$79.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
+
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center gap-3">
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <span class="discountBadge">-15%</span>
+                                    <div class="cardImgWrapper"><img src="./assets/img/hyperX.png" alt="HyperX Cloud"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">HyperX Cloud Alpha S Black</h5>
+                                    <a href="#" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$89.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/Aoc24.png" alt="Monitor AOC"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">AOC 24" 165Hz 1ms IPS Full HD</h5>
+                                    <a href="#" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$199.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/fuente.png" alt="Fuente Corsair"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">Fuente Corsair CX650 650W 80 Plus Bronze</h5>
+                                    <a href="#" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$79.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carouselArrow nextArrow" id="btnNext">
-                        <i class="fa-solid fa-chevron-right"></i>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </button>
                 </div>
             </div>
@@ -446,14 +476,20 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            const track = document.getElementById("productTrack");
-            ["btnNext", "btnPrev"].forEach(id => {
-                document.getElementById(id).onclick = () =>
-                    track.scrollBy({
-                        left: id === "btnNext" ? 260 : -260,
-                        behavior: "smooth"
-                    });
-            });
-        </script>
+        <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="
+            background-color: #121212;
+            color: #fff;
+            border: 1px solid #6c5ce7;
+          ">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title">¡Carrito actualizado!</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">Su producto ha sido enviado al carrito.</div>
+                </div>
+            </div>
+        </div>
 </body>
