@@ -81,6 +81,21 @@
                       >Auriculares</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/error-404.html"
+                      >Mousepads</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/error-404.html"
+                      >Webcams</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/error-404.html"
+                      >Cables</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -99,7 +114,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./placas-de-video.html"
+                    <a class="dropdown-item" href="./categorias-placas.html"
                       >Placas de Video</a
                     >
                   </li>
@@ -107,6 +122,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
               </li>
             </ul>
             <div class="navbarRight">
@@ -120,7 +138,7 @@
                 <a href="../pages/login.html"
                   ><i class="fa-solid fa-circle-user"></i
                 ></a>
-                <a href="../pages/carrito.html"
+                <a href="#modalCarrito"
                   ><i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -129,105 +147,77 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <!-- Hero -->
       <section class="aboutHero">
         <div class="aboutHeroContent container">
           <h1 class="aboutHeroTitle">ACERCA DE NOSOTROS</h1>
           <p class="aboutHeroSubtitle">
-            <!-- COMPLETAR: descripción corta del equipo o del proyecto -->
             Conocé al equipo que dio vida a Titan Hard.
           </p>
         </div>
       </section>
-
-      <!-- Frase / descripción del equipo -->
       <section class="aboutQuoteSection">
         <div class="container">
           <i class="fa-solid fa-bolt aboutQuoteIcon"></i>
           <h2 class="aboutQuote">
-            <!-- COMPLETAR: frase representativa del equipo -->
-            "Somos gamers que construimos para <span>gamers.</span>"
+            "Somos desarrolladores que construimos para <span>gamers.</span>"
           </h2>
           <p class="aboutQuoteDesc">
-            <!-- COMPLETAR: párrafo de presentación del equipo, contexto del proyecto, etc. -->
             Titan Hard nació como proyecto académico con el objetivo de crear
             una experiencia de compra gamer real, moderna y sin concesiones.
             Somos un equipo apasionado por la tecnología y el diseño web.
           </p>
         </div>
       </section>
-
       <div class="aboutDivider"></div>
-
-      <!-- Galería del equipo -->
       <section class="aboutTeamSection">
         <div class="container">
           <h2 class="aboutTeamTitle">EL <span>EQUIPO</span></h2>
           <p class="aboutTeamSubtitle">Las personas detrás del proyecto</p>
-
-          <!--
-          INSTRUCCIONES PARA COMPLETAR:
-          - Reemplazá el <div class="memberAvatarPlaceholder"> por un <img> con tu foto
-          - Ejemplo con foto:
-              <img src="../assets/img/foto-nombre.jpg" alt="Nombre" class="memberAvatar" />
-          - Completá el nombre y el rol de cada miembro
-          - Podés agregar o quitar columnas según la cantidad de integrantes
-          - La grilla usa Bootstrap: col-6 (2 por fila en mobile) y col-md-4 (3 en tablet/desktop)
-          - Si son 4 integrantes usá col-md-3; si son 2 usá col-md-6
-        -->
-
           <div class="row gy-5 justify-content-center">
-            <!-- Miembro 1 -->
             <div class="col-6 col-md-4">
               <div class="memberCard">
                 <div class="memberAvatarWrapper">
-                  <!-- Reemplazá esto por tu foto: -->
-                  <!-- <img src="../assets/img/TU-FOTO.jpg" alt="Tu Nombre" class="memberAvatar" /> -->
-                  <div class="memberAvatarPlaceholder">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
+                  <img
+                    src="../assets/img/Benja.png"
+                    alt="Benjamin Federico Mendez"
+                    class="memberAvatar"
+                  />
                 </div>
-                <!-- COMPLETAR nombre y rol -->
                 <p class="memberName">Benjamin Federico Mendez</p>
-                <p class="memberRole"><!-- Ej: Frontend Developer --></p>
+                <p class="memberRole">Tech Lead - Developer</p>
               </div>
             </div>
-
-            <!-- Miembro 2 -->
             <div class="col-6 col-md-4">
               <div class="memberCard">
                 <div class="memberAvatarWrapper">
-                  <!-- <img src="../assets/img/TU-FOTO.jpg" alt="Tu Nombre" class="memberAvatar" /> -->
-                  <div class="memberAvatarPlaceholder">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
+                  <img
+                    src="../assets/img/Fran.png"
+                    alt="Francisco Agustin Delgado Ojeda"
+                    class="memberAvatar"
+                  />
                 </div>
                 <p class="memberName">Francisco Agustin Delgado Ojeda</p>
-                <p class="memberRole"><!-- Ej: UI Designer --></p>
+                <p class="memberRole">Scrum Master - Developer</p>
               </div>
             </div>
-
-            <!-- Miembro 3 -->
             <div class="col-6 col-md-4">
               <div class="memberCard">
                 <div class="memberAvatarWrapper">
-                  <!-- <img src="../assets/img/TU-FOTO.jpg" alt="Tu Nombre" class="memberAvatar" /> -->
-                  <div class="memberAvatarPlaceholder">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
+                  <img
+                    src="../assets/img/Jose.png"
+                    alt="José Alejandro Abella"
+                    class="memberAvatar"
+                  />
                 </div>
                 <p class="memberName">José Alejandro Abella</p>
-                <p class="memberRole"><!-- Ej: Backend Developer --></p>
+                <p class="memberRole">Developer</p>
               </div>
             </div>
           </div>
-          <!-- /row -->
         </div>
       </section>
     </main>
-
     <footer class="footerCustom mt-5 pt-5 pb-3">
       <div class="container">
         <div class="row gy-4 justify-content-center">
@@ -316,7 +306,35 @@
         </div>
       </div>
     </footer>
-
+    <div id="modalCarrito" class="modalCarrito">
+      <div class="carritoContenido">
+        <a href="#" class="cerrarModal">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+        <h2>Tu carrito</h2>
+        <div class="productoCarrito">
+          <img src="../assets/img/4060ti.png" alt="placa4060" />
+          <div class="infoProducto">
+            <h3>Dual GeForce RTX 4060 8GB GDDR6</h3>
+            <p>Cantidad: 1</p>
+            <span>$1.120.000</span>
+          </div>
+        </div>
+        <div class="productoCarrito">
+          <img src="../assets/img/hyperX.png" alt="Mouse" />
+          <div class="infoProducto">
+            <h3>Mouse Gamer</h3>
+            <p>Cantidad: 2</p>
+            <span>$169.000</span>
+          </div>
+        </div>
+        <div class="totalCarrito">
+          <h3>Total</h3>
+          <span>$1.289.000</span>
+        </div>
+        <button class="btnComprar">Finalizar compra</button>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
