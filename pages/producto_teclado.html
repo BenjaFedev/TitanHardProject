@@ -69,11 +69,11 @@
     <section>
         <article class="productos">
             <img src="../assets/img/k552RGB.png" alt="Teclado Redragon K552">
+               <div class="separador_producto"></div>
         <div class="info">
             <h1>Teclado RedDragon K552 RGB</h1>
-            <p>$59.999</p>
-    <p>Lo que tenés que saber del Redragon K552 RGB
-        <ul>
+            <p class="precio">$59.999</p>
+        <ul> <p>★ Lo que tenés que saber del Redragon K552 RGB</p>
     <li>Diseño TKL compacto: más espacio para mover el mouse cómodamente.</li>
     <li>Estructura reforzada en acero y ABS resistente para largas sesiones gaming.</li>
     <li>Protección anti salpicaduras con sistema de drenaje interno.</li>
@@ -83,17 +83,99 @@
     </p>
     </div>
     <div class="detalle_de_compra">
+        <div class="info_compra">
         <p>Llega gratis el miércoles por ser tu primera compra</p>
         <p>Retirá gratis entre el jueves y el martes 2/jun en correo y otros puntos</p>
         <p>Stock disponible</p>
+        <button type="button" class="abrir_modal" data-bs-toggle="modal" data-bs-target="#modalPago">
+    Seleccionar método de pago
+</button>
+<div class="modal fade" id="modalPago" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal_pago">
+            <div class="modal-header">
+                <h2 class="modal-title">Seleccione sus métodos de pago</h2>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <button class="metodo_pago">💳 Tarjeta de crédito</button>
+                <button class="metodo_pago">📱 Mercado Pago</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
         <hr>
-        <button type="button">Comprar ahora</button>
-        <button type="button">Agregar al carrito</button>
+        <button type="button" class="boton_1">Comprar ahora</button>
+        <button type="button" class="boton_2"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
         <hr>
+        <div class="info_compra_2">
         <p> ⤶ Devolución gratis. Tenés 30 días desde que lo recibís.</p>
         <p>⛉ Compra Protegida. Recibí el producto que esperabas o te devolvemos tu dinero.</p>
+        </div>
     </div>
         </article>
+        <hr>
+        <section>
+            <article class="foro_opiniones">
+        <h2>OPINIONES DEL PRODUCTO</h2>
+        <p>4.8 ★★★★★</p>
+    <div class="comentarios">
+        <article class="comentario_personas">
+            <img src="../assets/img/foto_de_perfil.jpg" alt="Avatar de usuario" class="avatar">
+            <div class="contenido_comentario">
+                <span class="nombre-usuario">@CyrsuBlack</span>
+                <p>
+Muy bueno, cumple mucho con las expectativas, es comodo y super chiquito para tener mas espacio en el mouse. <br>
+Lo unico malo es que mi mamá me pegaba porque no la dejaba dormir con el ruido que hace pero en lo demás todo excelente.
+                </p>
+            </div>
+        </article>
+        <article class="comentario_personas">
+            <img src="../assets/img/foto_de_perfil.jpg" alt="Avatar de usuario" class="avatar">
+            <div class="contenido_comentario">
+                <span class="nombre-usuario">@Cronos900</span>
+                <p>
+                    Me encanta el tema de programador.
+                    El #001 es una obra maestra.
+                </p>
+            </div>
+        </article>
+        <article class="comentario_personas">
+            <img src="../assets/img/foto_de_perfil.jpg" alt="Avatar de usuario" class="avatar">
+            <div class="contenido_comentario">
+                <span class="nombre-usuario">@Nacopa</span>
+                <p>
+                ¡Miren este arte!
+                No puedo esperar al próximo lanzamiento.
+                </p>
+            </div>
+        </article>
+    </div>
+    <form class="form_comentario">
+        <div class="fila-form">
+            <label for="usuario">Comentar como:</label>
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Tu nombre de usuario"
+                minlength="3"
+                maxlength="100"
+                required
+            >
+        </div>
+        <div class="campo_mensaje">
+            <span class="nombre-usuario">@Hablemos</span>
+            <textarea
+                placeholder="Escribe un mensaje..."
+                required
+            ></textarea>
+            <button type="submit">
+                PUBLICAR COMENTARIO
+            </button>
+        </div>
+    </form>
+            </article>
     </section>
 </main>
 <footer></footer>
