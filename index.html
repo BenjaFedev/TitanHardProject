@@ -23,132 +23,90 @@
         <nav class="navbar navbar-expand-lg navbarCustom">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/LogoHome.png" alt="TitanHard" class="logoNavbar img-fluid"></a>
+                    <img src="./assets/img/LogoHome.png" alt="TitanHard" class="logoNavbar img-fluid">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav navbarLinks">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                INICIO
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">INICIO</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                PRODUCTOS
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTOS</a>
                             <ul class="dropdown-menu dropdownMenuCustom">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Teclados
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Mouses
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Auriculares
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Mousepads
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Webcams
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Cables
-                                    </a>
-                                </li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Teclados</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Mouses</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Auriculares</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Mousepad</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Webcam</a></li>
+                                <li><a class="dropdown-item" href="./pages/error-404.html">Cables</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                CATEGORÍAS
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="pages/categorias.html"
+                                data-bs-toggle="dropdown">CATEGORÍAS</a>
                             <ul class="dropdown-menu dropdownMenuCustom">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Procesadores
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Placas de Video
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Memorias RAM
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Fuentes
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Coolers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Periféricos
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Sillas Gamer
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Notebooks
-                                    </a>
-                                </li>
+
+                                <li><a class="dropdown-item" href="./pages/categorias-placas.html">Placas de
+                                        Video</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./pages/categorias-procesadores.html">Procesadores</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">
-                                CONTACTO
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a></li>
                     </ul>
                     <div class="navbarRight">
                         <form class="searchBox">
                             <input type="text" placeholder="Buscar productos...">
-                            <button type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                         <div class="navbarIcons">
-                                <a href="../pages/login.html">
-                                    <i class="fa-solid fa-circle-user"></i>
-                                </a><a href="../pages/carrito.html">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                            </div>
+                            <a href="pages/login.html"><i class="fa-solid fa-circle-user"></i></a>
+                            <a href="#modalCarrito"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="heroSection">
-            <div class="heroBackground"></div>
-            <div class="container heroContainer">
-                <div class="heroContent">
-                    <div class="heroTag">
+        <div id="modalCarrito" class="modalCarrito">
+            <div class="carritoContenido">
+                <a href="#" class="cerrarModal">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <h2>Tu carrito</h2>
+                <div class="productoCarrito">
+                    <img src="./assets/img/4060ti.png" alt="placa4060">
+                    <div class="infoProducto">
+                        <h3>Dual GeForce RTX 4060 8GB GDDR6</h3>
+                        <p>Cantidad: 1</p>
+                        <span>$1.120.000</span>
+                    </div>
+                </div>
+                <div class="productoCarrito">
+                    <img src="./assets/img/hyperX.png" alt="Mouse">
+                    <div class="infoProducto">
+                        <h3>Mouse Gamer</h3>
+                        <p>Cantidad: 2</p>
+                        <span>$169.000</span>
+                    </div>
+                </div>
+                <div class="totalCarrito">
+                    <h3>Total</h3>
+                    <span>$1.289.000</span>
+                </div>
+                <button class="btnComprar">
+                    Finalizar compra
+                </button>
+            </div>
+        </div>
+        <section class="bannerPrincipal">
+            <div class="bannerFondo"></div>
+            <div class="container contenidoBanner">
+                <div class="textoBanner">
+                    <div class="miniTitulo">
                         <i class="fa-solid fa-headset"></i>
                         <span>HARDWARE. RENDIMIENTO. PASIÓN</span>
                     </div>
@@ -162,7 +120,7 @@
                         Los mejores insumos y periféricos gamer
                         para llevar tu experiencia al siguiente nivel.
                     </p>
-                    <div class="heroButtons">
+                    <div class="botonesBanner">
                         <a href="./pages/error-404.html" class="btnProducts">
                             VER PRODUCTOS
                         </a>
@@ -170,9 +128,9 @@
                             OFERTAS
                         </a>
                     </div>
-                    <div class="heroFeatures">
-                        <div class="heroFeature">
-                            <div class="heroFeatureIcon">
+                    <div class="ventajasBanner">
+                        <div class="ventaja">
+                            <div class="iconoVentaja">
                                 <i class="fa-solid fa-truck-fast"></i>
                             </div>
                             <div>
@@ -180,8 +138,8 @@
                                 <span>A todo el país</span>
                             </div>
                         </div>
-                        <div class="heroFeature">
-                            <div class="heroFeatureIcon">
+                        <div class="ventaja">
+                            <div class="iconoVentaja">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
                             <div>
@@ -189,8 +147,8 @@
                                 <span>Sitio 100% protegido</span>
                             </div>
                         </div>
-                        <div class="heroFeature">
-                            <div class="heroFeatureIcon">
+                        <div class="ventaja">
+                            <div class="iconoVentaja">
                                 <i class="fa-solid fa-headset"></i>
                             </div>
                             <div>
@@ -202,39 +160,39 @@
                 </div>
             </div>
         </section>
-        <section class="featuresBanner">
-            <div class="featureItem">
-                <div class="featureIcon">
+        <section class="cajasInfo">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-regular fa-star"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>MARCAS LÍDERES</h3>
                     <p>En tecnología gamer</p>
                 </div>
             </div>
-            <div class="featureItem">
-                <div class="featureIcon">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-solid fa-shield-halved"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>CALIDAD GARANTIZADA</h3>
                     <p>Productos 100% originales</p>
                 </div>
             </div>
-            <div class="featureItem">
-                <div class="featureIcon">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-regular fa-credit-card"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>HASTA 6 CUOTAS</h3>
                     <p>Sin interés</p>
                 </div>
             </div>
-            <div class="featureItem">
-                <div class="featureIcon">
+            <div class="cajaInfo">
+                <div class="iconoInfo">
                     <i class="fa-solid fa-bolt"></i>
                 </div>
-                <div class="featureText">
+                <div class="textoInfo">
                     <h3>EXPERIENCIA GAMER</h3>
                     <p>Asesoramiento real</p>
                 </div>
@@ -250,6 +208,17 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
                 <div class="carousel-item active">
                     <img src="./assets/img/Banner1.png" class="d-block w-100" alt="Banner principal 1">
                 </div>
@@ -260,16 +229,7 @@
                     <img src="./assets/img/Banner3.png" class="d-block w-100" alt="Banner principal 3">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
         </div>
         <section class="bannerImg">
             <div class="brands">
@@ -290,27 +250,27 @@
                         CATEGORIAS
                         <i class="fa-solid fa-layer-group ms-3"
                             style="color: var(--primaryPurple); font-size: 1rem"></i>
-                    </h3><a href="#" class="Link_flechita">VER TODOS ></a>
+                    </h3><a href="./pages/error-404.html" class="Link_flechita">VER TODOS ></a>
                 </div>
                 <ul class="container_cards">
                     <li class="card_categoria"><img src="./assets/img/Tarjeta_Grafica.png" alt="Tarjeta Grafica ASUS">
-                        <p class="parrafo_card">COMPONENTES</p> <a href="" class="link_cards">VER MÁS → </a>
+                        <p class="parrafo_card">COMPONENTES</p> <a href="./pages/categorias-placas.html" class="link_cards">VER MÁS → </a>
                     </li>
                     <li class="card_categoria"><img src="./assets/img/Teclado_gamer.png" alt="Teclado Gamer">
-                        <p class="parrafo_card">PERIFERÍCOS</p><a href="" class="link_cards">VER MÁS → </a>
+                        <p class="parrafo_card">PERIFERÍCOS</p><a href="./pages/error-404.html" class="link_cards">VER MÁS → </a>
                     </li>
                     <li class="card_categoria"><img src="./assets/img/Auriculares.png" alt="Auriculares">
-                        <p class="parrafo_card">AURICULARES</p><a href="" class="link_cards">VER MÁS → </a>
+                        <p class="parrafo_card">AURICULARES</p><a href="./pages/error-404.html" class="link_cards">VER MÁS → </a>
                     </li>
                     <li class="card_categoria"><img src="./assets/img/Silla_Gamer.png" alt="Silla Gamer">
-                        <p class="parrafo_card">GAMING GEAR</p><a href="" class="link_cards">VER MÁS → </a>
+                        <p class="parrafo_card">GAMING GEAR</p><a href="./pages/error-404.html" class="link_cards">VER MÁS → </a>
                     </li>
                     <li class="card_categoria"><img src="./assets/img/Monitor.png" alt="Monitor">
-                        <p class="parrafo_card">MONITORES</p><a href="" class="link_cards">VER MÁS → </a>
+                        <p class="parrafo_card">MONITORES</p><a href="./pages/error-404.html" class="link_cards">VER MÁS → </a>
                     </li>
                     <li class="card_categoria"><img src="./assets/img/Fuente_de_alimentacion.png"
                             alt="Fuente de Alimentacion">
-                        <p class="parrafo_card">ACCESORIOS</p><a href="" class="link_cards">VER MÁS → </a>
+                        <p class="parrafo_card">ACCESORIOS</p><a href="./pages/error-404.html" class="link_cards">VER MÁS → </a>
                     </li>
                 </ul>
             </article>
@@ -327,104 +287,113 @@
                         VER TODOS <i class="fa-solid fa-chevron-right ms-1"></i>
                     </a>
                 </div>
-                <div class="carouselWrapper position-relative">
-                    <button class="carouselArrow prevArrow" id="btnPrev">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <div class="productTrack" id="productTrack">
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <span class="discountBadge">-10%</span>
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/4060ti.png" alt="RTX 4060" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">
-                                ASUS GeForce RTX 4060 Dual 8GB GDDR6
-                            </h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$499.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/k552RGB.png" alt="Teclado Redragon" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">
-                                Teclado Redragon K552 RGB Mechanical
-                            </h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$59.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/G pro.png" alt="Logitech G Pro X" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">Logitech G Pro X Superlight</h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$129.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <span class="discountBadge">-15%</span>
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/hyperX.png" alt="HyperX Cloud" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">HyperX Cloud Alpha S Black</h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$89.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
+                <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center gap-3">
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <span class="discountBadge">-10%</span>
+                                    <div class="cardImgWrapper"><img src="./assets/img/4060ti.png" alt="RTX 4060"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">ASUS GeForce RTX 4060 Dual 8GB GDDR6</h5>
+                                    <a href="./pages/categorias-placas.html" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$499.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/k552RGB.png"
+                                            alt="Teclado Redragon" class="img-fluid" /></div>
+                                    <h5 class="productTitle">Teclado Redragon K552 RGB Mechanical</h5>
+                                    <a href="./pages/error-404.html" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$59.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/G pro.png" alt="Logitech G Pro X"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">Logitech G Pro X Superlight</h5>
+                                    <a href="./pages/error-404.html" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$129.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/Aoc24.png" alt="Monitor AOC" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">AOC 24" 165Hz 1ms IPS Full HD</h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$199.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
-                            <div class="cardImgWrapper">
-                                <img src="./assets/img/fuente.png" alt="Fuente Corsair" class="img-fluid" />
-                            </div>
-                            <h5 class="productTitle">
-                                Fuente Corsair CX650 650W 80 Plus Bronze
-                            </h5>
-                            <a href="#" class="verMasText">VER MÁS <i class="fa-solid fa-arrow-right-long"></i></a>
-                            <div class="productFooter">
-                                <span class="productPrice">$79.999</span>
-                                <button class="cartBtn">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </button>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center gap-3">
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <span class="discountBadge">-15%</span>
+                                    <div class="cardImgWrapper"><img src="./assets/img/hyperX.png" alt="HyperX Cloud"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">HyperX Cloud Alpha S Black</h5>
+                                    <a href="./pages/error-404.html" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$89.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/Aoc24.png" alt="Monitor AOC"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">AOC 24" 165Hz 1ms IPS Full HD</h5>
+                                    <a href="./pages/error-404.html" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$199.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="productCard" style="background-image: url(./assets/img/card-fondo.png)">
+                                    <div class="cardImgWrapper"><img src="./assets/img/fuente.png" alt="Fuente Corsair"
+                                            class="img-fluid" /></div>
+                                    <h5 class="productTitle">Fuente Corsair CX650 650W 80 Plus Bronze</h5>
+                                    <a href="./pages/error-404.html" class="verMasText">VER MÁS <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="productFooter">
+                                        <span class="productPrice">$79.999</span>
+                                        <button class="cartBtn" title="Agregar al carrito" data-bs-toggle="modal"
+                                            data-bs-target="#modalConfirmacion">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carouselArrow nextArrow" id="btnNext">
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </button>
                 </div>
             </div>
-        </section>
         <section>
             <section class="foro">
                 <article class="form_foro">
@@ -502,4 +471,21 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="
+            background-color: #121212;
+            color: #fff;
+            border: 1px solid #6c5ce7;
+          ">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title">¡Carrito actualizado!</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">Su producto ha sido enviado al carrito.</div>
+                </div>
+            </div>
+        </div>
 </body>
