@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../css/categorias.css" />
     <link rel="icon" href="../assets/img/favicon.ico.ico" type="image/x-icon" />
   </head>
-
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbarCustom">
@@ -81,6 +80,21 @@
                       >Auriculares</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/error-404.html"
+                      >Mousepads</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/error-404.html"
+                      >Webcams</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/error-404.html"
+                      >Cables</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -108,6 +122,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+              </li>
             </ul>
             <div class="navbarRight">
               <form class="searchBox" onsubmit="return false;">
@@ -120,7 +137,7 @@
                 <a href="../pages/login.html"
                   ><i class="fa-solid fa-circle-user"></i
                 ></a>
-                <a href="../pages/carrito.html"
+                <a href="#modalCarrito"
                   ><i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -129,9 +146,7 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <!-- Hero -->
       <section
         class="categoryHero"
         style="
@@ -147,8 +162,6 @@
           </p>
         </div>
       </section>
-
-      <!-- Specs Banner -->
       <div class="categorySpecsBanner">
         <div class="container">
           <div class="row g-0 justify-content-center">
@@ -191,8 +204,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Productos -->
       <section class="categorySection py-5">
         <div class="container">
           <!-- Tabs de navegación entre categorías -->
@@ -204,21 +215,6 @@
               <i class="fa-solid fa-microchip me-1"></i> Procesadores
             </a>
           </div>
-
-          <!-- Toolbar -->
-          <div
-            class="categoryToolbar mb-4 d-flex justify-content-between align-items-center flex-wrap gap-3"
-          >
-            <span class="text-white opacity-75">Mostrando 8 productos</span>
-            <select class="form-select w-auto customSelect">
-              <option selected>Ordenar por: Destacados</option>
-              <option value="1">Menor a Mayor precio</option>
-              <option value="2">Mayor a Menor precio</option>
-              <option value="3">Más vendidos</option>
-            </select>
-          </div>
-
-          <!-- Grid de productos -->
           <div class="categoryGrid">
             <div
               class="productCard"
@@ -243,12 +239,16 @@
                   <span class="productPriceOld">$611.000</span>
                   <span class="productPrice">$549.999</span>
                 </div>
-                <button class="cartBtn" title="Agregar al carrito">
+                <button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
-
             <div
               class="productCard"
               style="
@@ -268,12 +268,16 @@
               ></a>
               <div class="productFooter">
                 <span class="productPrice">$980.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
+                <button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
-
             <div
               class="productCard"
               style="
@@ -293,12 +297,16 @@
               ></a>
               <div class="productFooter">
                 <span class="productPrice">$1.150.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
+                <button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
-
             <div
               class="productCard"
               style="
@@ -322,12 +330,16 @@
                   <span class="productPriceOld">$410.000</span>
                   <span class="productPrice">$389.500</span>
                 </div>
-                <button class="cartBtn" title="Agregar al carrito">
+                <button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
-
             <div
               class="productCard"
               style="
@@ -347,12 +359,16 @@
               ></a>
               <div class="productFooter">
                 <span class="productPrice">$720.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
+                <button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
-
             <div
               class="productCard"
               style="
@@ -376,12 +392,16 @@
                   <span class="productPriceOld">$1.560.000</span>
                   <span class="productPrice">$1.435.000</span>
                 </div>
-                <button class="cartBtn" title="Agregar al carrito">
+                <<button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
-
             <div
               class="productCard"
               style="
@@ -401,12 +421,16 @@
               ></a>
               <div class="productFooter">
                 <span class="productPrice">$2.100.000</span>
-                <button class="cartBtn" title="Agregar al carrito">
+                <button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
-
             <div
               class="productCard"
               style="
@@ -430,17 +454,20 @@
                   <span class="productPriceOld">$590.000</span>
                   <span class="productPrice">$501.500</span>
                 </div>
-                <button class="cartBtn" title="Agregar al carrito">
+                <button
+                  class="cartBtn"
+                  title="Agregar al carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalConfirmacion"
+                >
                   <i class="fa-solid fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
           </div>
-          <!-- /categoryGrid -->
         </div>
       </section>
     </main>
-
     <footer class="footerCustom mt-5 pt-5 pb-3">
       <div class="container">
         <div class="row gy-4 justify-content-center">
@@ -533,7 +560,63 @@
         </div>
       </div>
     </footer>
-
+    <div
+      class="modal fade"
+      id="modalConfirmacion"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="
+            background-color: #121212;
+            color: #fff;
+            border: 1px solid #6c5ce7;
+          "
+        >
+          <div class="modal-header border-0">
+            <h5 class="modal-title">¡Carrito actualizado!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Su producto ha sido enviado al carrito.</div>
+        </div>
+      </div>
+    </div>
+    <div id="modalCarrito" class="modalCarrito">
+      <div class="carritoContenido">
+        <a href="#" class="cerrarModal">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+        <h2>Tu carrito</h2>
+        <div class="productoCarrito">
+          <img src="../assets/img/4060ti.png" alt="placa4060" />
+          <div class="infoProducto">
+            <h3>Dual GeForce RTX 4060 8GB GDDR6</h3>
+            <p>Cantidad: 1</p>
+            <span>$1.120.000</span>
+          </div>
+        </div>
+        <div class="productoCarrito">
+          <img src="../assets/img/hyperX.png" alt="Mouse" />
+          <div class="infoProducto">
+            <h3>Mouse Gamer</h3>
+            <p>Cantidad: 2</p>
+            <span>$169.000</span>
+          </div>
+        </div>
+        <div class="totalCarrito">
+          <h3>Total</h3>
+          <span>$1.289.000</span>
+        </div>
+        <button class="btnComprar">Finalizar compra</button>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
