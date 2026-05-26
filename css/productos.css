@@ -288,3 +288,116 @@ button{
     border-radius: 5px;
     color: var(--white);
 }
+@media (max-width: 768px){
+
+    .productos{
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .separador_producto{
+        width: 100%;
+        height: 3px;
+        margin: 10px 0;
+    }
+
+    .info{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .info h1{
+        font-size: 28px;
+    }
+
+    .info ul li{
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .info ul p{
+        font-size: 18px;
+    }
+
+    .precio{
+        font-size: 38px;
+    }
+
+    .detalle_de_compra{
+        width: 100%;
+    }
+
+    .info_compra{
+        font-size: 14px;
+    }
+
+    .info_compra_2{
+        font-size: 11px;
+    }
+
+    .boton_1,
+    .boton_2,
+    .abrir_modal{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .foro_opiniones{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .foro_opiniones h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .comentario_personas{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenido_comentario{
+        align-items: center;
+    }
+
+    .contenido_comentario p{
+        font-size: 14px;
+    }
+
+    .form_comentario{
+        padding: 18px;
+    }
+
+    .form_comentario textarea{
+        width: 100%;
+        resize: none;
+    }
+
+    input{
+        width: 100%;
+        padding: 10px;
+    }
+
+    button{
+        padding: 10px;
+    }
+
+    .modal-body{
+        padding: 15px;
+    }
+
+    .metodo_pago{
+        font-size: 14px;
+        padding: 12px;
+    }
+}
