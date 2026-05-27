@@ -143,12 +143,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* NUEVO: Estilo visual de tarjeta */
-  background: rgba(255, 255, 255, 0.03); /* Fondo sutil oscuro */
+  background: rgba(255, 255, 255, 0.03); 
   padding: 30px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: var(--transition); /* Usa tu variable de transición global */
+  transition: var(--transition);
 }
 .memberCard:hover {
   background: rgba(255, 255, 255, 0.06);
