@@ -105,6 +105,7 @@ img{
 }
 .boton_1{
     padding: 10px 10px;
+    text-decoration: none;
     border: 2px solid var(--primaryPurple);
     border-radius: 5px;
     background-color: var(--primaryPurple);
