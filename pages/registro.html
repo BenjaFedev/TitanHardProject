@@ -80,7 +80,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle active"
+                  class="nav-link dropdown-toggle"
                   href="#"
                   data-bs-toggle="dropdown"
                   >CATEGORÍAS</a
@@ -234,6 +234,8 @@
                     title="Solo números"
                     maxlength="8"
                     autocomplete="postal-code"
+                    inputmode="numeric"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                   />
                 </div>
               </div>

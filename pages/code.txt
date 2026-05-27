@@ -1,0 +1,12 @@
+<input
+                      type="tel"
+                      id="telefono"
+                      placeholder="+54 381 000000"
+                      required
+                      pattern="[0-9+\s]+"
+                      minlength="8"
+                      maxlength="18"
+                      title="Ingrese solo números, espacios o el signo +"
+                      autocomplete="tel"
+                      oninput="this.value = this.value.replace(/[^0-9+\s]/g, '')"
+                    />
