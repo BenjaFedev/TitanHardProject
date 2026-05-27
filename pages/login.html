@@ -74,57 +74,23 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                    CATEGORÍAS
-                                </a>
-                                <ul class="dropdown-menu dropdownMenuCustom">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Procesadores
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Placas de Video
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Memorias RAM
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Fuentes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Coolers
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Periféricos
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Sillas Gamer
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Notebooks
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+                            <a class="nav-link dropdown-toggle" href="pages/categorias.html"
+                                data-bs-toggle="dropdown">CATEGORÍAS</a>
+                            <ul class="dropdown-menu dropdownMenuCustom">
+                                <li><a class="dropdown-item" href="./categorias-placas.html">Placas de
+                                        Video</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./categorias-procesadores.html">Procesadores</a></li>
+                            </ul>
+                        </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">
+                                <a class="nav-link" href="../pages/contacto.html">
                                     CONTACTO
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+                             </li>
                         </ul>
                         <div class="navbarRight">
                             <form class="searchBox">
@@ -136,7 +102,7 @@
                             <div class="navbarIcons">
                                 <a href="../pages/login.html">
                                     <i class="fa-solid fa-circle-user"></i>
-                                </a><a href="../pages/carrito.html">
+                                </a><a href="../pages/error-404.html">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
                             </div>
@@ -166,14 +132,14 @@
                                 <label for="email"> CORREO ELECTRÓNICO</label>
                                 <div class="inputBox">
                                     <i class="fa-regular fa-envelope"></i>
-                                    <input type="email" id="email" placeholder="ejemplo@titanhard.com" required />
+                                    <input type="email" id="email" placeholder="ejemplo@titanhard.com" maxlength="25" required />
                                 </div>
                             </div>
                             <div class="inputForm">
                                 <label for="password">CONTRASEÑA</label>
                                 <div class="inputBox">
                                     <i class="fa-solid fa-lock"></i>
-                                    <input type="password" id="password" placeholder="Ingresa tu contraseña"
+                                    <input type="password" id="password" placeholder="Ingresa tu contraseña" maxlength="12"
                                         required /><i class="fa-regular fa-eye eyeIcon"></i>
                                 </div>
                             </div>
