@@ -48,3 +48,8 @@
 - │── pages/
 - │── index.html
 - │── README.md
+
+
+  ### Deudas Técnicas
+  - Agregar funcionalidades con JavaScript.
+  - Pulir algunos diseños.
