@@ -138,3 +138,30 @@ body{
         width:100%;
     }
 }
+.secretRick{
+    display:block;
+    margin-top:20px;
+
+    font-size:12px;
+    font-weight:700;
+
+    text-decoration:none;
+    letter-spacing:2px;
+
+    color:#39ff14;
+
+    opacity:0.15;
+
+    transition:0.3s;
+}
+
+.secretRick:hover{
+    opacity:1;
+
+    text-shadow:
+    0 0 5px #39ff14,
+    0 0 10px #39ff14,
+    0 0 20px #39ff14;
+
+    transform:scale(1.05);
+}
