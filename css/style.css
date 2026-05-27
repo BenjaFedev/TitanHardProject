@@ -1656,8 +1656,6 @@ body {
   align-items: start;
 }
 
-/* PRODUCTOS */
-
 .productosCarrito {
   background-color: #0f0f0f;
   border: 1px solid rgba(149, 17, 150, 0.35);
@@ -1755,8 +1753,6 @@ body {
   color: white;
   transform: scale(1.05);
 }
-
-/* RESUMEN */
 
 .resumenCarrito {
   background-color: #0f0f0f;
@@ -1856,7 +1852,6 @@ body {
   box-shadow: 0 0 20px rgba(149, 17, 150, 0.35);
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 1100px) {
 
@@ -1923,5 +1918,11 @@ body {
 
   .totalResumen span {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .form_foro {
+    display: none;
   }
 }

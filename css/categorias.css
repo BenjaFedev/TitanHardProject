@@ -345,7 +345,7 @@
   }
   .pageBtn {
     font-size: 0.8rem;
-    padding: 0 10px; /* Un poco menos de padding en mobile */
+    padding: 0 10px; 
   }
 }
 
