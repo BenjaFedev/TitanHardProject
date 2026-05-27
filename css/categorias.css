@@ -8,8 +8,8 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  background-image: url("../assets/img/bannerPrincipal.png");
 }
-
 .categoryHeroOverlay {
   position: absolute;
   inset: 0;
@@ -20,7 +20,6 @@
   );
   z-index: 1;
 }
-
 .categoryHero::after {
   content: "";
   position: absolute;
@@ -37,7 +36,6 @@
   );
   z-index: 3;
 }
-
 .categoryHeroTitle {
   font-family: "Orbitron", sans-serif;
   color: var(--white);
@@ -49,7 +47,6 @@
     0 0 40px rgba(149, 17, 150, 0.4);
   letter-spacing: 2px;
 }
-
 .categoryHeroDesc {
   color: #d2d2d2;
   font-size: 1.1rem;
@@ -57,7 +54,6 @@
   margin: 0 auto;
   line-height: 1.6;
 }
-
 .categoryStats {
   display: flex;
   justify-content: center;
@@ -65,7 +61,6 @@
   flex-wrap: wrap;
   padding: 20px 0 10px;
 }
-
 .categoryStat {
   display: flex;
   align-items: center;
@@ -74,23 +69,19 @@
   font-size: 0.85rem;
   font-weight: 600;
 }
-
 .categoryStat i {
   color: var(--primaryGreen);
   font-size: 1rem;
 }
-
 .categoryStat strong {
   color: var(--white);
 }
-
 .categoryTabs {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-
 .categoryTab {
   padding: 8px 20px;
   border-radius: 30px;
@@ -104,12 +95,10 @@
   transition: var(--transition);
   font-family: "Barlow", sans-serif;
 }
-
 .categoryTab:hover {
   border-color: var(--primaryGreen);
   color: var(--primaryGreen);
 }
-
 .categoryTab.active {
   background: linear-gradient(
     135deg,
@@ -120,11 +109,9 @@
   color: var(--white);
   box-shadow: 0 0 15px rgba(149, 17, 150, 0.35);
 }
-
 .categorySection {
   min-height: 400px;
 }
-
 .customSelect {
   background-color: var(--lightBlack);
   color: var(--white);
@@ -132,7 +119,6 @@
   cursor: pointer;
   border-radius: 8px;
 }
-
 .customSelect:focus {
   background-color: var(--darkGray);
   border-color: var(--primaryGreen);
@@ -140,25 +126,29 @@
   color: var(--white);
   outline: none;
 }
-
 .customSelect option {
   background-color: var(--lightBlack);
 }
-
 .categoryGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 25px;
 }
-
 .categoryGrid .productCard {
   width: 100%;
   max-width: 100%;
   min-width: unset;
   flex: unset;
   scroll-snap-align: unset;
+  background-image: url("../assets/img/card-fondo.png");
+  background-size: cover;
+  background-position: center;
 }
-
+.modal-content-custom {
+  background-color: #121212 !important;
+  color: #fff !important;
+  border: 1px solid #6c5ce7 !important;
+}
 .productPriceOld {
   color: rgba(255, 255, 255, 0.35);
   font-size: 0.8rem;
@@ -168,12 +158,10 @@
   line-height: 1;
   margin-bottom: 2px;
 }
-
 .paginationContainer {
   display: flex;
   justify-content: center;
 }
-
 .paginationCustom {
   display: flex;
   gap: 10px;
@@ -183,7 +171,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .pageBtn {
   display: flex;
   align-items: center;
@@ -201,21 +188,18 @@
   font-size: 0.9rem;
   white-space: nowrap;
 }
-
 .pageBtn:hover {
   background-color: var(--primaryPurple);
   color: var(--white);
   box-shadow: 0 0 15px var(--purpleBorder);
   transform: translateY(-3px);
 }
-
 .pageBtn.active {
   background-color: var(--primaryGreen);
   border-color: var(--primaryGreen);
   color: var(--black);
   box-shadow: 0 0 15px var(--greenShadow);
 }
-
 .categorySpecsBanner {
   background: linear-gradient(
     135deg,
@@ -227,7 +211,6 @@
   border-bottom: 1px solid rgba(89, 242, 24, 0.15);
   padding: 18px 0;
 }
-
 .categorySpecItem {
   display: flex;
   align-items: center;
@@ -235,17 +218,14 @@
   padding: 8px 16px;
   border-right: 1px solid rgba(255, 255, 255, 0.07);
 }
-
 .categorySpecItem:last-child {
   border-right: none;
 }
-
 .categorySpecItem i {
   font-size: 1.3rem;
   color: var(--primaryGreen);
   flex-shrink: 0;
 }
-
 .categorySpecItem .specLabel {
   font-size: 0.72rem;
   color: rgba(255, 255, 255, 0.45);
@@ -254,14 +234,12 @@
   letter-spacing: 0.5px;
   line-height: 1;
 }
-
 .categorySpecItem .specValue {
   font-size: 0.9rem;
   color: var(--white);
   font-weight: 700;
   line-height: 1.2;
 }
-
 .relatedTitle {
   font-family: "Orbitron", sans-serif;
   font-size: 1.1rem;
@@ -269,18 +247,15 @@
   color: var(--white);
   letter-spacing: 1px;
 }
-
 .relatedTitle span {
   color: var(--primaryGreen);
 }
-
 .filterChips {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
-
 .filterChip {
   padding: 4px 14px;
   border-radius: 20px;
@@ -293,62 +268,51 @@
   transition: var(--transition);
   font-family: "Barlow", sans-serif;
 }
-
 .filterChip:hover,
 .filterChip.active {
   border-color: var(--primaryPurple);
   color: var(--white);
   background: rgba(149, 17, 150, 0.18);
 }
-
 @media (max-width: 768px) {
   .categoryHero {
     height: 210px;
   }
-
   .categoryHeroTitle {
     font-size: 2rem;
   }
-
   .categoryHeroDesc {
     font-size: 0.95rem;
   }
-
   .categoryGrid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 18px;
   }
-
   .categorySpecItem {
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     padding: 10px 0;
   }
-
   .categorySpecItem:last-child {
     border-bottom: none;
   }
 }
-
 @media (max-width: 480px) {
   .categoryHeroTitle {
     font-size: 1.5rem;
   }
-
   .categoryHeroDesc {
     font-size: 0.85rem;
   }
-
   .categoryGrid {
     grid-template-columns: 1fr 1fr;
     gap: 14px;
   }
   .pageBtn {
     font-size: 0.8rem;
-    padding: 0 10px; 
+    padding: 0 10px;
   }
 }
-
 @media (max-width: 360px) {
   .categoryGrid {
     grid-template-columns: 1fr;
