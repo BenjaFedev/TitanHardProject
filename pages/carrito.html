@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/productos.css">
     <link rel="icon" href="../assets/img/favicon.ico.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbarCustom">
@@ -42,14 +43,14 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href=""
+                            <a class="nav-link dropdown-toggle" href="error-404.html"
                                 data-bs-toggle="dropdown">CATEGORÍAS</a>
                             <ul class="dropdown-menu dropdownMenuCustom">
-                                
-                                <li><a class="dropdown-item" href="./categorias-placas.html">Placas de
+
+                                <li><a class="dropdown-item" href="../pages/categorias-placas.html">Placas de
                                         Video</a></li>
                                 <li><a class="dropdown-item"
-                                        href="./categorias-procesadores.html">Procesadores</a></li>
+                                        href="../pages/categorias-procesadores.html">Procesadores</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
@@ -61,146 +62,123 @@
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                         <div class="navbarIcons">
-                            <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
-                            <a href="#modalCarrito"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="../pages/login.html">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <a href="./carrito.html">
+                                </a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-</header>
-<main>
-    <section>
-        <article class="productos">
-            <img src="../assets/img/G pro.png" alt="Logitech G Pro X Superlight">
-               <div class="separador_producto"></div>
-        <div class="info">
-            <h1>Logitech G Pro X Superlight</h1>
-            <p class="precio">$129.999</p>
-        <ul> <p>★ Lo que tenés que saber del Logitech G Pro X Superlight</p>
-    <li>Diseño ultraliviano de menos de 63 gramos para movimientos rápidos y precisos.</li>
-    <li>Sensor HERO 25K de alta precisión con seguimiento avanzado y gran velocidad de respuesta.</li>
-    <li>Conexión inalámbrica LIGHTSPEED: rendimiento profesional sin retrasos.</li>
-    <li>Batería de larga duración para sesiones gaming intensas sin interrupciones.</li>
-    <li>Base de PTFE sin aditivos para un deslizamiento mucho más suave.</li>
-    <li>Construcción minimalista y ergonómica pensada para esports y juegos competitivos.</li>
-    <li>Compatible con Logitech G HUB para personalizar DPI, macros y configuraciones.</li>
-        </ul>
-    </p>
+    </header>
+    <main class="paginaCarrito">
+  <div class="contenedorCarrito">
+    <div class="encabezadoCarrito">
+      <h1>
+        <i class="fa-solid fa-cart-shopping"></i>
+        Mi Carrito
+      </h1>
+      <p>
+        Estos son los productos que agregaste.
+      </p>
     </div>
-    <div class="detalle_de_compra">
-        <div class="info_compra">
-        <p>Llega gratis el miércoles por ser tu primera compra</p>
-        <p>Retirá gratis entre el jueves y el martes 2/jun en correo y otros puntos</p>
-        <p>Stock disponible</p>
-        <button type="button" class="abrir_modal" data-bs-toggle="modal" data-bs-target="#modalPago">
-    Seleccionar método de pago
-</button>
-<div class="modal fade" id="modalPago" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content modal_pago">
-            <div class="modal-header">
-                <h2 class="modal-title">Seleccione sus métodos de pago</h2>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <button class="metodo_pago">💳 Tarjeta de crédito</button>
-                <button class="metodo_pago">📱 Mercado Pago</button>
-            </div>
+    <div class="contenidoCarrito">
+      <div class="productosCarrito">
+        <div class="titulosTabla">
+          <span>Producto</span>
+          <span>Descripción</span>
+          <span>Precio</span>
+          <span>Importe</span>
+          <span></span>
         </div>
-    </div>
-</div>
-        </div>
-        <hr>
-                <a href="#modalCarrito" class="boton_1">
-    Comprar ahora
-</a>
-<div id="modalCarrito" class="modalCarrito">
-    <div class="carritoContenido">
-        <a href="#" class="cerrarModal">
-            <i class="fa-solid fa-xmark"></i>
-        </a>
-        <h2>Tu carrito</h2>
         <div class="productoCarrito">
-            <img src="../assets/img/G pro.png" alt="placa4060">
-            <div class="infoProducto">
-                <h3>Logitech G Pro X Superlight</h3>
-                <p>Cantidad: 1</p>
-                <span>$129.999</span>
-            </div>
+          <div class="imagenProducto">
+            <img src="../assets/img/4060ti.png" alt="RTX">
+          </div>
+          <div class="infoProducto">
+            <h3>RTX 4070 SUPER</h3>
+            <p>12GB GDDR6X</p>
+          </div>
+          <div class="precioProducto">
+            <span>$450.000</span>
+          </div>
+          <div class="importeProducto">
+            <span>$450.000</span>
+          </div>
+          <button class="botonEliminar">
+            <i class="fa-solid fa-trash"></i>
+          </button>
         </div>
-    </div>
-    </div>
-        <button type="button" class="boton_2"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
-        <hr>
-        <div class="info_compra_2">
-        <p> ⤶ Devolución gratis. Tenés 30 días desde que lo recibís.</p>
-        <p>⛉ Compra Protegida. Recibí el producto que esperabas o te devolvemos tu dinero.</p>
+        <div class="productoCarrito">
+          <div class="imagenProducto">
+            <img src="../assets/img/Fuente_de_alimentacion.png" alt="Fuente">
+          </div>
+          <div class="infoProducto">
+            <h3>Fuente Corsair 850W</h3>
+            <p>80 Plus Gold</p>
+          </div>
+          <div class="precioProducto">
+            <span>$180.000</span>
+          </div>
+          <div class="importeProducto">
+            <span>$180.000</span>
+          </div>
+          <button class="botonEliminar">
+            <i class="fa-solid fa-trash"></i>
+          </button>
         </div>
-    </div>
-        </article>
-        <hr>
-        <section>
-            <article class="foro_opiniones">
-        <h2>OPINIONES DEL PRODUCTO</h2>
-        <p>4.8 ★★★★★</p>
-    <div class="comentarios">
-        <article class="comentario_personas">
-            <img src="../assets/img/foto_de_perfil.jpg" alt="Avatar de usuario" class="avatar">
-            <div class="contenido_comentario">
-                <span class="nombre-usuario">@CyrsuBlack</span>
-                <p>
-                Destaca por su excelente desempeño y durabilidad, siendo una opción confiable para el uso diario. Su batería de larga duración y su diseño ergonómico y ligero lo hacen muy cómodo para largas sesiones de juego. Además, su precisión y calidad de construcción lo posicionan como uno de los mejores en el mercado.
-                </p>
-            </div>
-        </article>
-        <article class="comentario_personas">
-            <img src="../assets/img/foto_de_perfil.jpg" alt="Avatar de usuario" class="avatar">
-            <div class="contenido_comentario">
-                <span class="nombre-usuario">@Cronos900</span>
-                <p>
-                Revisen bien el tipo de agarre que tiene y la posición de los botones, en mi casa fue un poco difícil acostumbrarme pero es un muy buen producto.  
-                </p>
-            </div>
-        </article>
-        <article class="comentario_personas">
-            <img src="../assets/img/foto_de_perfil.jpg" alt="Avatar de usuario" class="avatar">
-            <div class="contenido_comentario">
-                <span class="nombre-usuario">@Nacopa</span>
-                <p>
-                Me encanta por su calidad y precio, fue una excelente compra.
-                </p>
-            </div>
-        </article>
-    </div>
-    <form class="form_comentario">
-        <div class="fila-form">
-            <label for="usuario">Comentar como:</label>
-            <input
-                type="text"
-                id="usuario"
-                placeholder="Tu nombre de usuario"
-                minlength="3"
-                maxlength="100"
-                required
-            >
+        <div class="productoCarrito">
+          <div class="imagenProducto">
+            <img src="../assets/img/AMDRyzen5-7600X6C12T5.3GHz.png" alt="Ryzen">
+          </div>
+          <div class="infoProducto">
+            <h3>Ryzen 7 7800X3D</h3>
+            <p>Procesador Gamer</p>
+          </div>
+          <div class="precioProducto">
+            <span>$320.000</span>
+          </div>
+          <div class="importeProducto">
+            <span>$320.000</span>
+          </div>
+          <button class="botonEliminar">
+            <i class="fa-solid fa-trash"></i>
+          </button>
         </div>
-        <div class="campo_mensaje">
-            <span class="nombre-usuario">@Hablemos</span>
-            <textarea
-                placeholder="Escribe un mensaje..."
-                required
-            ></textarea>
-            <button type="submit">
-                PUBLICAR COMENTARIO
-            </button>
+      </div>
+      <div class="resumenCarrito">
+        <h2>Resumen</h2>
+        <div class="itemResumen">
+          <span>Subtotal</span>
+          <span>$950.000</span>
         </div>
-    </form>
-            </article>
-    </section>
+        <div class="itemResumen">
+          <span>Envío</span>
+          <span>Gratis</span>
+        </div>
+        <div class="itemResumen">
+          <span>Descuento</span>
+          <span>- $25.000</span>
+        </div>
+        <div class="totalResumen">
+          <span>Total</span>
+          <span>$925.000</span>
+        </div>
+        <div class="botonesResumen">
+          <a href="../pages/error404.html" class="botonComprar">
+            Comprar ahora
+          </a>
+          <a href="../index.html" class="botonVolver">
+            Seguir comprando
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
-<footer>
-            <footer class="footerCustom mt-5 pt-5 pb-3">
+    <footer>
+        <footer class="footerCustom mt-5 pt-5 pb-3">
             <div class="container">
                 <div class="row gy-4 justify-content-center">
                     <div class="col-12 col-lg-3 text-center text-lg-start">
@@ -221,7 +199,7 @@
                     <div class="col-12 col-sm-6 col-lg-3 text-center text-lg-start">
                         <h6 class="footerTitle">ATENCIÓN AL CLIENTE</h6>
                         <ul class="list-unstyled footerLinks footerContact">
-                            <li><a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <li><a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                             </li>
                             <li><a href="https://www.google.com/maps" target="_blank"><i
                                         class="fa-solid fa-location-dot"></i> Sucursal
@@ -251,6 +229,4 @@
                     </div>
                 </div>
             </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</html>
+        </footer>

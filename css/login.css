@@ -510,11 +510,12 @@ background:rgba(255,255,255,.03);
 border:1px solid rgba(255,255,255,.08);
 color:#fff;
 font-size:1.2rem;
-display:flex;
+display:inline-flex;
 align-items:center;
 justify-content:center;
 cursor:pointer;
 transition:var(--transition);
+text-decoration:none;
 }
 
 .socialButton:hover{
