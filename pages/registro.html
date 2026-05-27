@@ -216,8 +216,9 @@
                     pattern="[0-9+\s]+"
                     minlength="8"
                     maxlength="18"
-                    title="Solo números"
+                    title="Ingrese solo números, espacios o el signo +"
                     autocomplete="tel"
+                    oninput="this.value = this.value.replace(/[^0-9+\s]/g, '')"
                   />
                 </div>
               </div>
